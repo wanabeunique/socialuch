@@ -1,0 +1,509 @@
+@import _cfg.sass
+
+body
+  font-family: "Jost", sans-serif
+
+.survey__wrapper
+  max-width: 1070px
+
+.survey__input
+  margin-bottom: var(--tiny-offset)
+  display: flex
+  flex-direction: column
+
+.survey__input--title
+  color: var(--title-black-color)
+  margin-bottom: 5px
+
+.survey__input--wrapper
+  display: flex
+
+.survey__input--question
+  display: flex
+  width: 100%
+
+.survey__input--area
+  display: flex
+  width: 100%
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  color: #474747
+  font-weight: 300
+  padding: 10px 20px
+
+.survey__input--btn
+  display: flex
+  width: 100%
+  max-width: 400px
+  height: 40px
+  align-items: center
+  justify-content: center
+  margin-left: var(--tiny-offset)
+  background: #FFFFFF
+  border: 1px solid #c2b5b5
+  border-radius: 40px
+  cursor: pointer
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.04))
+  strong
+    color: var(--blue-color)
+    line-height: 20px
+    font-weight: 500
+    font-size: 14px
+
+.survey__checkboxes
+  display: flex
+  .survey__checkbox--wrapper
+    input
+      margin-right: 10px
+    &:not(:last-child)
+      margin-right: var(--tiny-offset)
+.survey__checkbox--wrapper
+  display: flex
+  align-items: center
+
+.survey__input--checkbox[type="checkbox"]
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none
+  /* Remove most all native input styles */
+  appearance: none
+  /* For iOS < 15 */
+  background-color: var(--form-background)
+  /* Not removed via appearance */
+  margin: 0
+
+  font: inherit
+  color: var(--blue-color)
+  width: 1.15em
+  height: 1.15em
+  border: 0.15em solid currentColor
+  border-radius: 0.15em
+  transform: translateY(-0.075em)
+
+  display: grid
+  place-content: center
+
+.survey__input--checkbox::before
+  content: ""
+  width: 0.7em
+  height: 0.7em
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%)
+  transform: scale(0)
+  transform-origin: bottom left
+  transition: 120ms transform ease-in-out
+  box-shadow: inset 1em 1em var(--form-control-color)
+  /* Windows High Contrast Mode */
+  background: var(--blue-color)
+
+.survey__input--checkbox:checked
+  &:before
+    transform: scale(1)
+  .survey__input--checkbox
+    p
+      color: var(--blue-color)
+
+.survey__options--item
+  display: flex
+  margin-top: 10px
+
+.survey__options--delete
+  border: none
+  background: white
+  cursor: pointer
+  img
+    width: 20px
+    height: 20px
+
+.survey__options--change
+  border: none
+  background: white
+  margin-right: var(--tiny-offset)
+  cursor: pointer
+  img
+    width: 20px
+    height: 20px
+
+.survey__input > p,strong
+  color: var(--title-black-color)
+  font-weight: 400
+  font-size: 14px
+  line-height: 140%
+
+.survey__options--area
+  max-width: 756px
+  width: 100%
+  height: 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  margin-right: var(--tiny-offset)
+  padding: 10px 20px
+  font-weight: 300
+  font-size: 14px
+  line-height: 140%
+  color: #474747
+
+.survey__options--add
+  margin: 0
+  margin-top: var(--tiny-offset)
+
+.survey__input--time
+  display: flex
+  flex-direction: row
+  gap: 0 20px
+.survey__input--date
+  display: flex
+  flex-direction: column
+  input
+    margin-top: 5px
+    display: flex
+    width: 350px
+    height: 40px
+    background: #FFFFFF
+    border: 1px solid #EDEDED
+    border-radius: 40px
+    padding: 10px 20px
+
+.survey__input--type
+  display: flex
+  max-width: 350px
+
+.survey__select
+  position: relative
+  max-width: 100%
+  margin-top: 5px
+  p
+    color: var(--title-black-color)
+    font-weight: 400
+    font-size: 14px
+    line-height: 140%
+  input
+    width: 100%
+  &::after
+    content: ''
+    display: flex
+    position: absolute
+    background-image: url("./../img/page4/blueArrow.svg")
+    background-repeat: no-repeat
+    width: 14px
+    height: 20px
+    right: 0
+    top: 14px
+    z-index: 5
+    padding: 0 10px
+
+.survey__input--supplement
+  display: flex
+  flex-direction: row
+  .survey__select
+    max-width: 350px
+    width: 100%
+    &:not(:last-child)
+      margin-right: var(--tiny-offset)
+    input
+      width: 100%
+      margin-top: 5px
+    &::after
+      content: ''
+      display: flex
+      position: absolute
+      background-image: url("./../img/page4/blueArrow.svg")
+      background-repeat: no-repeat
+      width: 14px
+      height: 20px
+      right: 0
+      top: 35px
+      z-index: 5
+      padding: 0 10px
+
+////    
+.survey__upload--wrapper
+  width: 400px
+  height: 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  display: flex
+  max-width: 400px
+  max-height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  position: relative
+  margin-top: 5px
+  &:hover
+    background: var(--white-color)
+    transition: .3s ease all
+.survey__upload
+  display: none
+  &::before
+    position: absolute
+
+.survey__upload--text
+  display: flex
+  align-items: center
+  justify-content: center
+  color: var(--blue-color)
+  position: absolute
+  top: calc( 20px - 23px/2 )
+  img
+    margin-right: 7px
+
+#survey__upload_list
+  margin-top: 20px
+  margin-bottom: 20px
+  position: absolute
+  display: flex
+  gap: 20px
+  width: 100%
+  align-items: center
+  justify-content: left
+  flex-wrap: wrap
+  width: 1530px
+  top: 40px
+  left: 0
+
+.survey__files
+  display: flex
+  margin-top: 8px
+  flex-wrap: wrap
+
+.survey__files--wrapper
+  .MultiFile-label
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 220px
+    width: 100%
+    min-height: 40px
+    background: #F9F9F9
+    border-radius: 40px
+    padding: 10px 20px
+
+.MultiFile-title
+  color: var(--title-black-color)
+  font-weight: 300
+
+.survey__btns
+  display: flex
+  margin-top: var(--tiny-offset)
+  .survey__btn
+    &:first-child
+      margin-right: var(--tiny-offset)
+
+.survey__btn--blue
+  background: var(--blue-color)
+  color: white
+
+.survey__btn--white
+  background: #FFFFFF
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+  border-radius: 40px
+  color: var(--blue-color)
+
+.survey__btns
+  display: flex
+  margin-top: var(--tiny-offset)
+  .survey__btn
+    &:first-child
+      margin-right: var(--tiny-offset)
+
+.survey__btn--blue
+  background: var(--blue-color)
+  color: white
+
+.survey__btn--white
+  background: #FFFFFF
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+  border-radius: 40px
+  color: var(--blue-color)
+
+.survey__btn
+  display: flex
+  justify-content: center
+  position: relative
+  align-items: center
+  height: 50px
+  width: 100%
+  border-radius: 40px
+  max-width: 300px
+  img
+    margin-right: 7px
+
+.survey__textarea
+  margin-top: 5px
+  min-height: 115px
+  border: 1px solid #EDEDED
+  border-radius: 20px
+  padding: var(--small-offset)
+  min-width: 100%
+  resize: none
+  color: #404040
+  font-weight: 300
+  font-size: 14px
+  line-height: 120%
+  font-weight: 300
+  font-size: 14px
+  line-height: 140%
+
+.chosen-value
+  transition: .3s ease-in-out
+  display: flex
+  justify-content: center
+  flex-direction: column
+  position: relative
+  padding: 10px 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  height: 40px
+
+.chosen-value
+  color: var(--title-black-color)
+  font-weight: 300
+  &:hover
+    background-color: var(--white-color)
+    cursor: pointer
+  &::-webkit-input-placeholder
+    color: #333
+
+  &:focus,
+  &.open
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2)
+    outline: 0
+    background-color: var(--white-color)
+    color: #000
+
+  &::-webkit-input-placeholder
+    color: #000
+
+.editing__input--adress
+  width: 400px
+
+  &::-webkit-input-placeholder
+    color: #333
+
+  &:hover
+    background-color: var(--white-color)
+    cursor: pointer
+
+    &::-webkit-input-placeholder
+      color: #333
+
+  &:focus,
+  &.open
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2)
+    outline: 0
+    background-color: var(--white-color)
+    color: #000
+
+    &::-webkit-input-placeholder
+      color: #000
+
+.survey__select--wrapper
+  max-height: 56px
+
+.survey__files
+  gap: var(--tiny-offset)
+
+.value-list
+  position: absolute
+  width: 100%
+@media (max-width: 800px)
+  .survey__input--wrapper
+    flex-direction: column
+    button
+      margin-top: var(--tiny-offset)
+      margin-left: 0
+  .defautTitle--text
+    font-size: 30px
+    padding: 16px 0px
+  .survey__input--time
+    margin-bottom: 5px
+
+@media (max-width: 738px)
+  .survey__input--time
+    flex-direction: column
+  .survey__input--date
+    &:not(:first-child)
+      margin-top: 5px
+  .survey__input--supplement
+    flex-direction: column
+    .survey__select
+      &:not(:first-child)
+        margin-top: 5px
+  .survey__select--wrapper
+    max-height: calc(56px + 56px + 5px )
+  .survey__files--wrapper
+    padding-top: 20px
+  .survey__input--type
+    margin-bottom: 0
+  .survey__upload--wrapper
+    width: 100%
+    max-width: 350px
+@media (max-width: 678px)
+  .survey__checkboxes
+    flex-direction: column
+    p
+      &:not(:first-child)
+        margin-top: 5px
+
+@media (max-width: 370px)
+  .defautTitle--text
+    font-size: 25px
+  .survey__input--date
+    input
+      max-width: 350px
+      width: 100%
+
+.survey__input--question
+  display: flex
+
+.survey__input--question
+  display: flex
+  flex-direction: column
+
+.survey__input--questionsWrapper
+  display: flex
+  flex-direction: row
+  position: relative
+
+.survey__input--btnQuestion
+  position: absolute
+  top: 25px
+  left: 776px
+
+.survey__input--question
+  &:not(:first-child)
+    margin-top: 5px
+
+.survey__quetsion--btn
+  border: none
+  background: white
+  cursor: pointer
+  img
+    width: 20px
+    height: 20px
+
+.survey__input--area
+  max-width: 756px
+.survey__input--areaWrapper
+  display: flex
+  width: 100%
+  button
+    margin-left: 10px
+
+.survey__input--questions
+  width: 100%
+
+@media (max-width: 1219px )
+  .survey__input--questionsWrapper
+    display: flex
+    flex-direction: column
+  .survey__input--btnQuestion
+    margin-top: 10px
+    margin-left: 0
+    position: relative
+    top: 0
+    left: 0

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <script defer src="./../js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container-wrap  ">
+      <div class="header__logo">
+        <img src="./../img/header/logo.png" alt="">
+      </div>
+
+      <input id="burger" type="checkbox" class="burger" onclick="scrollDisable(event)"/>
+      <label for="burger" class="burger-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav class="header__nav">
+      <div class="header__social header__item">
+        <strong class="header__text">Телефон<span>+7 (831) 987-77-54</span></strong>
+      </div>
+      <div class="header__social header__item">
+        <strong class="header__text">E-mail<span>social@nn.ru</span></strong>
+      </div>
+      <a href="#" class="btnAcc header__item header__lk btnAcc--logined">
+        <img src="./../img/header/lk-active.svg" alt="">
+        <p class="btnAcc__text">Личный кабинет</p>
+        <span class="header__notification">
+          <img src="./../img/header/notificationsWhite.svg" alt="">
+        </span>
+      </a>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="page__container container-wrap">
+        <a href="#" class="page__link">Главная&nbsp; / Личный кабинет социального участкового&nbsp; / </a><span class="page__current">Личный кабинет гражданина</span>
+      </div>
+    </div>
+    <section class="table">
+      <div class="table__container container-wrap">
+        <div class="defaultTitle">
+          <h3 class="defautTitle--text">Новостная лента Ленинского района</h3>
+        </div>
+        <div class="table__selects">
+          <form class="table__select">
+            <input class="chosen-value chosen-value--first table__input--adress" type="text" value="" placeholder="Улица">
+            <ul class="value-list value-list--first">
+              <li class="table__select--first">Alabama</li>
+            <li class="table__select--first">Alaska</li>
+            <li class="table__select--first">Arizona</li>
+            <li class="table__select--first">Arkansas</li>
+            <li class="table__select--first">California</li>
+            <li class="table__select--first">Colorado</li>
+            <li class="table__select--first">Connecticut</li>
+            <li class="table__select--first">Delaware</li>
+            <li class="table__select--first">Florida</li>
+            <li class="table__select--first">Georgia</li>
+            <li class="table__select--first">Hawaii</li>
+            <li class="table__select--first">Idaho</li>
+            <li class="table__select--first">Illinois</li>
+            <li class="table__select--first">Indiana</li>
+            <li class="table__select--first">Iowa</li>
+            <li class="table__select--first">Kansas</li>
+            <li class="table__select--first">Kentucky</li>
+            <li class="table__select--first">Louisiana</li>
+            <li class="table__select--first">Maine</li>
+            <li class="table__select--first">Maryland</li>
+            <li class="table__select--first">Massachusetts</li>
+            <li class="table__select--first">Michigan</li>
+            <li class="table__select--first">Minnesota</li>
+            <li class="table__select--first">Mississippi</li>
+            <li class="table__select--first">Missouri</li>
+            <li class="table__select--first">Montana</li>
+            <li class="table__select--first">Nebraska</li>
+            <li class="table__select--first">Nevada</li>
+            <li class="table__select--first">New Hampshire</li>
+            <li class="table__select--first">New Jersey</li>
+            <li class="table__select--first">New Mexico</li>
+            <li class="table__select--first">New York</li>
+            </ul>
+          </form>
+        <form class="table__select">
+          <input class="chosen-value chosen-value--second table__input--category" type="text" value="" placeholder="Категория">
+          <ul class="value-list value-list--second">
+            <li class="table__select--second">Alabama</li>
+            <li class="table__select--second">Alaska</li>
+            <li class="table__select--second">Arizona</li>
+            <li class="table__select--second">Arkansas</li>
+            <li class="table__select--second">California</li>
+            <li class="table__select--second">Colorado</li>
+            <li class="table__select--second">Connecticut</li>
+            <li class="table__select--second">Delaware</li>
+            <li class="table__select--second">Florida</li>
+            <li class="table__select--second">Georgia</li>
+            <li class="table__select--second">Hawaii</li>
+            <li class="table__select--second">Idaho</li>
+            <li class="table__select--second">Illinois</li>
+            <li class="table__select--second">Indiana</li>
+            <li class="table__select--second">Iowa</li>
+            <li class="table__select--second">Kansas</li>
+            <li class="table__select--second">Kentucky</li>
+            <li class="table__select--second">Louisiana</li>
+            <li class="table__select--second">Maine</li>
+            <li class="table__select--second">Maryland</li>
+            <li class="table__select--second">Massachusetts</li>
+            <li class="table__select--second">Michigan</li>
+            <li class="table__select--second">Minnesota</li>
+            <li class="table__select--second">Mississippi</li>
+            <li class="table__select--second">Missouri</li>
+            <li class="table__select--second">Montana</li>
+            <li class="table__select--second">Nebraska</li>
+            <li class="table__select--second">Nevada</li>
+            <li class="table__select--second">New Hampshire</li>
+            <li class="table__select--second">New Jersey</li>
+            <li class="table__select--second">New Mexico</li>
+            <li class="table__select--second">New York</li>
+            <li class="table__select--second">North Carolina</li>
+            <li class="table__select--second">North Dakota</li>
+            <li class="table__select--second">Ohio</li>
+            <li class="table__select--second">Oklahoma</li>
+            <li class="table__select--second">Oregon</li>
+          </ul>
+        </form>
+        <form class="table__select">
+          <input class="chosen-value chosen-value--third table__input--category" type="text" value="" placeholder="Категория">
+          <ul class="value-list value-list--third">
+              <li class="table__select--third">Alabama</li>
+              <li class="table__select--third">Alaska</li>
+              <li class="table__select--third">Arizona</li>
+              <li class="table__select--third">Arkansas</li>
+              <li class="table__select--third">California</li>
+              <li class="table__select--third">Colorado</li>
+              <li class="table__select--third">Connecticut</li>
+              <li class="table__select--third">Delaware</li>
+              <li class="table__select--third">Florida</li>
+              <li class="table__select--third">Georgia</li>
+              <li class="table__select--third">Hawaii</li>
+              <li class="table__select--third">Idaho</li>
+              <li class="table__select--third">Illinois</li>
+              <li class="table__select--third">Indiana</li>
+              <li class="table__select--third">Iowa</li>
+              <li class="table__select--third">Kansas</li>
+              <li class="table__select--third">Kentucky</li>
+              <li class="table__select--third">Louisiana</li>
+              <li class="table__select--third">Maine</li>
+              <li class="table__select--third">Maryland</li>
+              <li class="table__select--third">Massachusetts</li>
+              <li class="table__select--third">Michigan</li>
+              <li class="table__select--third">Minnesota</li>
+              <li class="table__select--third">Mississippi</li>
+              <li class="table__select--third">Missouri</li>
+              <li class="table__select--third">Montana</li>
+              <li class="table__select--third">Nebraska</li>
+              <li class="table__select--third">Nevada</li>
+              <li class="table__select--third">New Hampshire</li>
+              <li class="table__select--third">New Jersey</li>
+              <li class="table__select--third">New Mexico</li>
+              <li class="table__select--third">New York</li>
+              <li class="table__select--third">North Carolina</li>
+              <li class="table__select--third">North Dakota</li>
+          </ul>
+        </form>
+        <div class="table__search">
+          <div class="table__search--wrapper">
+            <input type="text">
+          </div>
+        </div>
+        <a href="" class="table__btn">
+          <img src="./../img/page3/timeBlue.svg" alt="">
+          <strong>Просмотреть историю изменений</strong>
+        </a>
+        <a href="" class="table__btn--white">
+          <img src="./../img/page3/add.svg" alt="">
+          <strong>Просмотреть историю изменений</strong>
+        </a>
+        </div>
+    </div>
+    </div>
+    </section>
+    <section class="issue">
+      <div class="issue__container container-wrap">
+        <div class="issue__wrapper">
+          <div class="issue__title">
+            <div class="issue__title--date">Дата регистрации</div>
+            <div class="issue__title--adress">Адрес</div>
+            <div class="issue__title--name">Наименование</div>
+            <div class="issue__title--category">Категория</div>
+            <div class="issue__title--status">Статус проблемы</div>
+            <div class="issue__title--edit">Редактировать</div>
+          </div>
+          <div class="issue__list">
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+            <ul class="issue__item">
+              <li class="issue__el">28.12.2022</li>
+              <li class="issue__el">Ул. Космонавта Комарова, 86, кв 19</li>
+              <li class="issue__el">Поломка отопления в доме</li>
+              <li class="issue__el">+7 (910) 393-45-33</li>
+              <li class="issue__el">Передано в муниципалитет, Передано в УК</li>
+              <li class="issue__link"><a href=""><img src="./../img/page3/time.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <button class="issue__open">
+          Показать еще 30
+        </button>
+      </div>
+    </section>
+    <section class="tableNav">
+      <div class="tableNav__container container-wrap"> 
+        <a class="tableNav__link" href="#">Назад</a>
+        <div class="tableNav__items">
+          <a class="tableNav__arrow--back" href=""></a>
+          <a href="#" class="tableNav__page tableNav__active">1</a>
+          <div>...</div>
+          <a href="#" class="tableNav__page">2</a>
+          <a href="#" class="tableNav__page">3</a>
+          <a href="#" class="tableNav__page">4</a>
+          <a href="#" class="tableNav__page">5</a>
+          <a class="tableNav__arrow--next" href=""></a>
+        </div>
+        <a class="tableNav__link" href="#">Вперед</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container-wrap">
+      <ul class="footer__items">
+        <li class="footer__item"><img src="./../img/footer/logo.png" alt=""></li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/phone.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">Телефон тех поддержки</strong>
+            <span class="footer__number">+7 (831) 987-77-54</span>
+          </div>
+        </li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/message.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">E-mail тех поддержки</strong>
+            <span class="footer__mail">social@nn.ru</span>
+          </div>
+        </li>
+        <li class="footer__item footer__nav">
+          <ul>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Главная</a>          
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Новости</a>          
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item footer__btn">
+          <a href="#" class="btnAcc">
+            <img src="img/btnPic.svg" alt="">
+            <p class="btnAcc__text">Личный кабинет</p>         
+          </a>
+        </li>
+      </ul>
+      <div class="footer__privace-policy">
+        <p>&copy;&nbsp;2022&ndash;2022 Проект &laquo;Социальный участковый&raquo;</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+// header
+.header
+  margin-bottom: 20px
+  position: relative
+
+.header__container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: 14px
+
+.header__nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.header__item
+  &:not(:last-child)
+    margin-right: 60px
+
+.header__text
+  font-weight: 300
+  font-size: 18px
+  line-height: 26px
+  color: var(--gray-color)
+  span
+    margin-left: 14px
+    color: var(--black-color)
+    font-weight: 600
+    font-size: 20px
+    line-height: 29px
+
+.header__lk
+  position: relative
+
+.header__notification
+  position: absolute
+  width: 26px
+  height: 26px
+  border-radius: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: linear-gradient(180deg, #F18266 0%, #D82C25 100%)
+  top: -5px
+  right: 10px
+
+@media (max-width: 1099px)
+  .header__nav
+    display: grid
+    grid-template-columns: 1fr
+    .header__social
+      margin: 0
+      text-align: right
+    .header__item
+      width: 100%
+
+  .header__item
+    margin: 0
+
+@media (max-width: 478px)
+  .header__container
+    display: flex
+  .header__item
+    display: flex
+    align-items: center
+  .header__nav
+    margin-top: var(--small-offset)

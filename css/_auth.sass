@@ -1,0 +1,162 @@
+body
+  .checkbox--material__checkmark::before
+    border: 1px solid var(--blue-color)
+  :checked + .checkbox--material__checkmark::before
+    background-color: inherit
+
+  .auths__btn
+    max-width: 650px
+    height: 50px
+    border: 1px solid var(--blue-color)
+    font-weight: 600
+    font-size: 18px
+    line-height: 140%
+    color: var(--blue-color)
+    background: inherit
+    border-radius: 40px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+  // phone container
+  .page__content
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+    position: relative
+    height: 100%
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   top: calc(100px - 30%)
+    //   right: calc( 100px - 50% )
+    //   background: linear-gradient(178.24deg, rgba(1, 168, 38, 0.4) 1.49%, rgba(34, 208, 214, 0.4) 74.84%)
+    //   opacity: 0.3
+    //   display: block
+    //   width: 50vw
+    //   height: 50vw
+    //   border-radius: 100%
+  .toolbar
+    background-image: none
+    background-position: none
+  .auth
+    .auth__form
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+    .auth__form--img
+      margin-top: var(--small-offset)
+    .auth__form--title
+      font-weight: 600
+      font-size: 30px
+      line-height: 140%
+      margin: 0
+      margin-top: var(--small-offset)
+      color: var(--title-black-color)
+    .auth__form--subtitle
+      margin: 0
+      margin-top: 5px
+      font-weight: 300
+      font-size: 16px
+      line-height: 140%
+      color: var(--title-black-color)
+      margin-bottom: 40px
+    .auth__form--input
+      position: relative
+      width: 100%
+      display: flex
+      justify-content: center
+      max-width: 650px
+      img
+        position: absolute
+        top: 14px
+        left: 30px
+        height: 22px
+        width: 22px
+      input
+        padding: 0 60px
+        width: 100%
+        border: 1px solid #EDEDED
+        border-radius: 40px
+        height: 50px
+    .auth__name
+      margin-bottom: 10px
+    .auth__phone
+      margin-bottom: var(--small-offset)
+    .auth__form-captcha
+      width: 100%
+      max-height: 93px
+      border-radius: 20px
+      margin-bottom: 25px
+      max-width: 358px
+    .auths__btn-blue
+      background: #FFFFFF
+      border: 1px solid #5DACDF
+      margin-bottom: 16px
+    .auths__btn-green
+      background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+      color: white
+      border: none
+      margin-bottom: var(--small-offset)
+    .auth__form--checkbox
+      display: flex
+    .auth__form--text
+      margin-left: var(--tiny-offset)
+      font-weight: 500
+      font-size: 13px
+      line-height: 140%
+      color: #8D8D8D
+      a
+        color: var(--blue-color)
+        border-bottom: 1px solid var(--blue-color)
+    .auth__form--bg
+      margin-top: 60px
+      width: 100vw
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      img
+        width: 100vw
+        max-width: 650px
+        height: 100%
+      // &::after
+      //   content: ''
+      //   position: absolute
+      //   left: 0
+      //   bottom: 0
+      //   background-image: url('./../img/auth/bg.svg')
+      //   width: 100%
+      //   height: 100%
+      //   background-repeat: no-repeat
+      //   background-position: bottom
+      //   background-size: 100%
+      //   z-index: -1
+      //   max-height: 450px
+    //login
+    .auth__form--help
+      display: flex
+      width: 100%
+      justify-content: flex-end
+      font-weight: 500
+      font-size: 18px
+      line-height: 140%
+      color: var(--blue-color)
+      text-decoration-line: underline
+      margin-bottom: var(--small-offset)
+      max-width: 650px
+    .blur--container
+      display: flex
+      flex-direction: column
+      max-width: 650px
+      align-items: center
+      width: 100%
+      padding: 0 15px
+    .auth__form--blur
+      width: 100vw
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      background-size: 100vw

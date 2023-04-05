@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" language="javascript"></script>
+  <script src="./../js/jquery.MultiFile.js" type="text/javascript" language="javascript"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container-wrap  ">
+      <div class="header__logo">
+        <img src="./../img/header/logo.png" alt="">
+      </div>
+
+      <input id="burger" type="checkbox" class="burger" onclick="scrollDisable(event)"/>
+      <label for="burger" class="burger-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav class="header__nav">
+      <div class="header__social header__item">
+        <strong class="header__text">Телефон<span>+7 (831) 987-77-54</span></strong>
+      </div>
+      <div class="header__social header__item">
+        <strong class="header__text">E-mail<span>social@nn.ru</span></strong>
+      </div>
+      <a href="#" class="btnAcc header__item header__lk btnAcc--logined">
+        <img src="./../img/header/lk-active.svg" alt="">
+        <p class="btnAcc__text">Личный кабинет</p>
+        <span class="header__notification">
+          <img src="./../img/header/notificationsWhite.svg" alt="">
+        </span>
+      </a>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page">
+      <div class="page__container container-wrap">
+        <a href="#" class="page__link">Главная 
+          / Личный кабинет социального участкового 
+          / Опросы и голосования 
+          / Ремонт дороги 23.12.22 ...
+        </a>
+        <span class="page__current">/ Редактирование опроса</span>
+      </div>
+    </div>
+    <section class="survey">
+      <div class="survey__container container-wrap">
+        <div class="defaultTitle">
+          <div class="defautTitle--text">
+            Редактирование опроса
+          </div>
+        </div>
+        <div class="survey__wrapper">
+          <div class="survey__input">
+            <strong class="survey__input--title">Тема опроса (название)</strong>
+            <input type="text" class="survey__theme survey__input--area">
+          </div>
+          <div class="survey__input survey__input--questionsWrapper">
+              <div class="survey__input--questions">
+                <div class="survey__input--question">
+                  <strong class="survey__input--title">Вопрос 1 (основной) </strong>
+                  <div class="survey__input--areaWrapper">
+                    <input type="text" class="survey__input--area">
+                  </div>
+                </div>
+              </div>
+              <button class="survey__input--btn survey__input--btnQuestion" onclick="addQuestion()">
+                <img src="" alt="">
+                <strong>+ Добавить еще вопрос</strong>
+              </button>
+          </div>
+          <div class="survey__input">
+            <strong class="survey__input--title">Типы вариантов ответов</strong>
+            <div class="survey__checkboxes">
+              <label class="survey__checkbox--wrapper">
+                <input id="survey__checkbox-1" type="checkbox" class="survey__input--checkbox"  onclick="getState(this)">
+                <p>Одиночный ответ</p>
+              </label>
+              <label class="survey__checkbox--wrapper">
+                <input id="survey__checkbox-2"type="checkbox" class="survey__input--checkbox"  onclick="getState(this)">
+                <p>Множественный ответ</p>
+              </label>
+            </div>
+          </div>
+          <div class="survey__input">
+            <strong class="survey__input--title">Добавить вариантов ответов</strong>
+            <div class="survey__options">
+            </div>
+            <button class="survey__input--btn survey__options--add"  onclick="addOption()">
+              <img src="" alt="">
+              <strong>+ Добавить еще вопрос</strong>
+            </button>
+          </div>
+        </div>
+        <div class="survey__input">
+          <strong class="survey__input--title">Тип результатов</strong>
+          <div class="survey__checkboxes">
+            <label class="survey__checkbox--wrapper">
+              <input id="survey__checkbox-3" type="checkbox" class="survey__input--checkbox"  onclick="getState(this)">
+              <p>Вывод результатов</p>
+            </label>
+            <label class="survey__checkbox--wrapper">
+              <input id="survey__checkbox-4"type="checkbox" class="survey__input--checkbox"  onclick="getState(this)">
+              <p>Выводить только фразу-благодарность (без показа результатов)</p>
+            </label>
+          </div>
+        </div>
+        <div class="survey__input survey__input--time">
+          <div class="survey__input--date">
+            <strong>Дата начала опроса:</strong>
+            <input type="date">
+          </div>
+          <div class="survey__input--date">
+            <strong>Дата окончания опроса:</strong>
+            <input type="date">
+          </div>
+        </div>
+        <div class="survey__input survey__input--type survey__select--wrapper">
+          <p>Категория проблемы</p>
+          <form class="survey__select">
+            <input class="chosen-value chosen-value--first" type="text" value="" placeholder="Добавить категорию">
+            <ul class="value-list value-list--first">
+              <li class="survey__select--first">Alabama</li>
+              <li class="survey__select--first">Alaska</li>
+              <li class="survey__select--first">Arizona</li>
+              <li class="survey__select--first">Arkansas</li>
+              <li class="survey__select--first">California</li>
+              <li class="survey__select--first">Colorado</li>
+              <li class="survey__select--first">Connecticut</li>
+              <li class="survey__select--first">Delaware</li>
+              <li class="survey__select--first">Florida</li>
+              <li class="survey__select--first">Georgia</li>
+              <li class="survey__select--first">Hawaii</li>
+              <li class="survey__select--first">Idaho</li>
+              <li class="survey__select--first">Illinois</li>
+              <li class="survey__select--first">Indiana</li>
+              <li class="survey__select--first">Iowa</li>
+              <li class="survey__select--first">Kansas</li>
+              <li class="survey__select--first">Kentucky</li>
+              <li class="survey__select--first">Louisiana</li>
+              <li class="survey__select--first">Maine</li>
+              <li class="survey__select--first">Maryland</li>
+              <li class="survey__select--first">Massachusetts</li>
+              <li class="survey__select--first">Michigan</li>
+              <li class="survey__select--first">Minnesota</li>
+              <li class="survey__select--first">Mississippi</li>
+              <li class="survey__select--first">Missouri</li>
+              <li class="survey__select--first">Montana</li>
+              <li class="survey__select--first">Nebraska</li>
+              <li class="survey__select--first">Nevada</li>
+              <li class="survey__select--first">New Hampshire</li>
+              <li class="survey__select--first">New Jersey</li>
+              <li class="survey__select--first">New Mexico</li>
+              <li class="survey__select--first">New York</li>
+            </ul>
+          </form>
+        </div>
+        <div class="survey__input survey__input--supplement survey__select--wrapper">
+          <form class="survey__select">
+            <p>Связан с проблемой</p>
+            <input class="chosen-value chosen-value--second survey__input--category" type="text" value="" placeholder="Добавить">
+            <ul class="value-list value-list--second">
+              <li class="survey__select--second">Alabama</li>
+              <li class="survey__select--second">Alaska</li>
+              <li class="survey__select--second">Arizona</li>
+              <li class="survey__select--second">Arkansas</li>
+              <li class="survey__select--second">California</li>
+              <li class="survey__select--second">Colorado</li>
+              <li class="survey__select--second">Connecticut</li>
+              <li class="survey__select--second">Delaware</li>
+              <li class="survey__select--second">Florida</li>
+              <li class="survey__select--second">Georgia</li>
+              <li class="survey__select--second">Hawaii</li>
+              <li class="survey__select--second">Idaho</li>
+              <li class="survey__select--second">Illinois</li>
+              <li class="survey__select--second">Indiana</li>
+              <li class="survey__select--second">Iowa</li>
+              <li class="survey__select--second">Kansas</li>
+              <li class="survey__select--second">Kentucky</li>
+              <li class="survey__select--second">Louisiana</li>
+              <li class="survey__select--second">Maine</li>
+              <li class="survey__select--second">Maryland</li>
+              <li class="survey__select--second">Massachusetts</li>
+              <li class="survey__select--second">Michigan</li>
+              <li class="survey__select--second">Minnesota</li>
+              <li class="survey__select--second">Mississippi</li>
+              <li class="survey__select--second">Missouri</li>
+              <li class="survey__select--second">Montana</li>
+              <li class="survey__select--second">Nebraska</li>
+              <li class="survey__select--second">Nevada</li>
+              <li class="survey__select--second">New Hampshire</li>
+              <li class="survey__select--second">New Jersey</li>
+              <li class="survey__select--second">New Mexico</li>
+              <li class="survey__select--second">New York</li>
+              <li class="survey__select--second">North Carolina</li>
+              <li class="survey__select--second">North Dakota</li>
+              <li class="survey__select--second">Ohio</li>
+              <li class="survey__select--second">Oklahoma</li>
+              <li class="survey__select--second">Oregon</li>
+            </ul>
+          </form>
+          <form class="survey__select">
+            <p>Связан с новостью</p>
+            <input class="chosen-value chosen-value--third survey__input--category" type="text" value="" placeholder="Добавить">
+            <ul class="value-list value-list--third">
+                <li class="survey__select--third">Alabama</li>
+                <li class="survey__select--third">Alaska</li>
+                <li class="survey__select--third">Arizona</li>
+                <li class="survey__select--third">Arkansas</li>
+                <li class="survey__select--third">California</li>
+                <li class="survey__select--third">Colorado</li>
+                <li class="survey__select--third">Connecticut</li>
+                <li class="survey__select--third">Delaware</li>
+                <li class="survey__select--third">Florida</li>
+                <li class="survey__select--third">Georgia</li>
+                <li class="survey__select--third">Hawaii</li>
+                <li class="survey__select--third">Idaho</li>
+                <li class="survey__select--third">Illinois</li>
+                <li class="survey__select--third">Indiana</li>
+                <li class="survey__select--third">Iowa</li>
+                <li class="survey__select--third">Kansas</li>
+                <li class="survey__select--third">Kentucky</li>
+                <li class="survey__select--third">Louisiana</li>
+                <li class="survey__select--third">Maine</li>
+                <li class="survey__select--third">Maryland</li>
+                <li class="survey__select--third">Massachusetts</li>
+                <li class="survey__select--third">Michigan</li>
+                <li class="survey__select--third">Minnesota</li>
+                <li class="survey__select--third">Mississippi</li>
+                <li class="survey__select--third">Missouri</li>
+                <li class="survey__select--third">Montana</li>
+                <li class="survey__select--third">Nebraska</li>
+                <li class="survey__select--third">Nevada</li>
+                <li class="survey__select--third">New Hampshire</li>
+                <li class="survey__select--third">New Jersey</li>
+                <li class="survey__select--third">New Mexico</li>
+                <li class="survey__select--third">New York</li>
+                <li class="survey__select--third">North Carolina</li>
+                <li class="survey__select--third">North Dakota</li>
+            </ul>
+          </form>
+        </div>
+        <div class="survey__input survey__files--wrapper">
+          <p>Прикрепленные файлы:</p>
+          <label class="survey__upload--wrapper">
+            <input class="survey__upload" type="file" id="survey__upload"/>
+            <div class="survey__upload--text">
+              <img src="./../img/page4/addFile.svg" alt="">
+              <span>Добавить файл</span>
+            </div>
+          </label>
+          <div class="survey__files">
+            <!-- Файлы из и survey__upload-->
+          </div>
+      </div>
+      <div class="survey__input">
+        <p>Текстовое описание</p>
+        <textarea class="survey__textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="survey__btns">
+        <a href="#" class="survey__btn survey__btn--blue">
+          <img src="./../img/page4/sendBtn.svg" alt="">
+          <span>Опубликовать</span>
+        </a>
+        <a href="#" class="survey__btn survey__btn--white">
+          <img src="./../img/page4/leftArrow.svg" alt="">
+          <span>Назад</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container-wrap">
+      <ul class="footer__items">
+        <li class="footer__item"><img src="./../img/footer/logo.png" alt=""></li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/phone.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">Телефон тех поддержки</strong>
+            <span class="footer__number">+7 (831) 987-77-54</span>
+          </div>
+        </li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/message.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">E-mail тех поддержки</strong>
+            <span class="footer__mail">social@nn.ru</span>
+          </div>
+        </li>
+        <li class="footer__item footer__nav">
+          <ul>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Главная</a>          
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Новости</a>          
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item footer__btn">
+          <a href="#" class="btnAcc">
+            <img src="img/btnPic.svg" alt="">
+            <p class="btnAcc__text">Личный кабинет</p>         
+          </a>
+        </li>
+      </ul>
+      <div class="footer__privace-policy">
+        <p>&copy;&nbsp;2022&ndash;2022 Проект &laquo;Социальный участковый&raquo;</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./../js/page5.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,1128 @@
+//page
+.page__link
+  color: var(--page-nav-color)
+.page__current
+  color: var(--text-black-color)
+  line-height: 140%
+
+//main
+
+.main
+  margin-top: var(--tiny-offset)
+
+.main__items
+  display: flex
+  justify-content: space-between
+
+.main__item
+  display: flex
+  flex-direction: column
+  padding: 30px
+  border-radius: var(--tiny-offset)
+  height: 400px
+  max-width: 564px
+.main__item--profile
+  background: var(--white-color)
+
+.main__item--local
+  background: var(--turquoise-color)
+
+.main__title
+  display: flex
+  justify-content: space-between
+
+.main__cnt
+  display: flex
+  align-items: center
+  justify-content: center
+  background: linear-gradient(90deg, #F3997B 0%, #F08165 14%, #E94A31 50%, #D92F26 75%, #CA181D 100%)
+  border-radius: 100%
+  color: white
+  width: 30px
+  height: 30px
+
+.main__title-wrapper
+  display: flex
+  margin-bottom: var(--small-offset)
+  img
+    margin-right: 15px
+    width: 30px
+    height: 30px
+  h3
+    font-weight: 500
+    font-size: 24px
+    color: var(--title-black-color)
+
+.main__text
+  margin-bottom: 10px
+  font-weight: 300
+  font-size: 20px
+  strong
+    margin-right: 10px
+    font-weight: 500
+    font-size: 18px
+
+.main__btns
+  display: flex
+  justify-content: space-between
+  margin-top: 70px
+
+.main__btn
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 40px
+  width: 240px
+  height: 50px
+  .main__btn--title
+    font-weight: 500
+    font-size: 16px
+
+.main__btn--blue
+  background: linear-gradient(124.36deg, #7FBFE6 5.05%, #0097D7 116.28%)
+  margin-right: 20px
+  .main__btn--title
+    color: white
+
+.main__btn--white
+  border: 1px solid var(--blue-color)
+  .main__btn--title
+    color: var(--blue-color)
+
+.main__btn--green
+  background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+  width: 100%
+  .main__btn--title
+    color: white
+
+.main__btn--img
+  width: 22px
+  height: 22px
+  margin-right: 14px
+
+.main__person
+  display: flex
+  align-items: center
+  margin-bottom: var(--tiny-offset)
+
+.main__name
+  color: #474747
+  font-size: 22px
+  margin-right: var(--tiny-offset)
+
+.main__person--img
+  border-radius: 20px
+
+.main__contacts
+  .main__contact
+    &:not(:last-child)
+      margin-bottom: 5px
+
+.main__contact
+  display: flex
+  align-items: center
+
+.main__contact--img
+  width: 22px
+  height: 22px
+  margin-right: 12px
+
+.main__link
+  color: #474747
+  font-weight: 500
+  font-size: 18px
+
+.main__phone
+  margin-left: 3px
+  font-weight: 400
+  line-height: 140%
+  font-size: 20px
+  color: var(--blue-color)
+
+.main__email
+  font-weight: 300
+  font-size: 20px
+  margin-left: 3px
+  color: #474747
+
+.main__item--notifications
+  border: 1px solid #F3F3F3
+  position: relative
+  max-width: 375px
+  padding: 0
+  .main__title
+    margin-bottom: 0
+    padding: 30px
+    height: 78px
+    background: #F1FAFF
+    border-radius: 20px 20px 0 0
+
+.main__update
+  background: rgba(228, 137, 123, 0.1)
+
+.main__msg
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  height: 78px
+  padding: 20px 30px
+
+.main__notification
+  border-bottom: 1px solid #F3F3F3
+
+.main__messages--title
+  font-weight: 500
+  font-size: 16px
+  color: #A8A8A8
+
+.main__messages--text
+  font-weight: 300
+  font-size: 16px
+  color: #A8A8A8
+
+.main__messages
+  max-height: calc( 400px - 78px - 72px - 2px)
+
+// events
+
+.events
+  margin-top: var(--big-offset)
+
+.events__container
+  display: flex
+  flex-direction: column
+  border-radius: 40px
+
+.events__title
+  color: var(--title-black-color)
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+
+.events__subtitle
+  margin-top: var(--tiny-offset)
+  font-size: 18px
+  line-height: 26px
+  color: var(--text-black-color)
+
+.events__types
+  margin-top: var(--tiny-offset)
+
+.events__choose
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  background: #F1FAFF
+  border-radius: 30px 30px 0 0
+
+.events__choose--item
+  padding: 18px 76px
+  font-weight: 500
+  font-size: 18px
+  line-height: 26px
+  color: #474747
+
+.events__choose--active
+  background: white
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+  border-radius: 40px
+  color: var(--blue-color)
+  margin: 0 6px
+
+.events__content
+  display: flex
+  padding: var(--small-offset)
+  background: var(--white-color)
+  border-radius: 0 0 35px 35px
+
+.events__content--item
+  display: flex
+  align-items: center
+  margin-right: var(--tiny-offset)
+
+.events__content--img
+  margin-right: 15px
+
+.events__content--text
+  font-weight: 300
+  font-size: 18px
+  color: #404040
+
+//googleMap
+
+.googleMap
+  margin-top: var(--small-offset)
+
+//boards
+
+.board
+  display: flex
+  flex-direction: column
+  margin-top: var(--middle-offset)
+
+.board__title
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+  color: var(--title-black-color)
+  margin-bottom: var(--tiny-offset)
+
+.board__items
+  display: grid
+  grid-template-columns: 1fr 1fr
+  padding: 20px
+  gap: 20px
+  max-width: 760px
+  max-height: 421px
+  background: var(--white-color)
+  border-radius: 20px
+
+.board__item
+  display: flex
+  flex-direction: column
+  max-width: 350px
+  max-height: 180px
+  background: white
+  padding: 20px
+  border-radius: 20px
+
+.board__item--date
+  span
+    margin-left: 10px
+    color: var(--blue-color)
+
+.board__item--text
+  margin-top: 10px
+  font-weight: 300
+  color: var(--text-black-color)
+
+.board__btn
+  width: 150px
+  height: 30px
+  border-radius: 20px
+  border: 1px solid var(--blue-color)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: var(--tiny-offset)
+  span
+    color: var(--blue-color)
+    font-weight: 500
+    font-size: 12px
+
+.board__item--link
+  background: #F1FAFF
+  display: flex
+  justify-content: center
+
+.board__btn--blue
+  display: flex
+  align-items: center
+  justify-content: center
+  background: var(--blue-color)
+  border-radius: 40px
+  height: 50px
+  span
+    color: var(--turquoise-color)
+    font-weight: 500
+    line-height: 23px
+    margin-left: 8px
+
+.boards__wrapper
+  display: flex
+  justify-content: space-between
+
+// slider
+
+.swiper
+  width: 100%
+
+.carousel
+  margin-top: var(--middle-offset)
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.carousel__container
+  background: var(--white-color)
+  border-radius: 20px
+  padding: 0 20px
+  display: flex
+  flex-direction: column
+  width: calc(100vw - 10px)
+
+.defaultTitle
+  margin: var(--small-offset) 0
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+
+.defautTitle--text
+  color: var(--title-black-color)
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+
+.defautTitle--btn
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 16px 45px
+  background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+  border-radius: 40px
+  display: flex
+  height: 52px
+  width: 250px
+  min-width: 250px
+  p
+    font-weight: 500
+    font-size: 18px
+    line-height: 26px
+    color: white
+    margin-right: 12px
+
+.carousel__item-wrapper
+  max-width: 355px
+  margin-top: var(--middle-offset)
+  display: flex
+  flex-direction: column
+  align-items: left
+  margin-left: 20px
+  position: relative
+  &:hover
+    background: #FFFFFF
+    box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.05)
+    border-radius: 35px
+    .carousel__link
+      display: flex
+    svg
+      path
+        fill: var(--green-color)
+    .carousel__inscription
+      color: var(--text-black-color)
+      font-weight: 500
+      line-height: 140%
+
+    span
+      color: var(--green-color)
+
+.carousel__link
+  position: absolute
+  left: calc(100%/2 - 128px/2)
+  top: calc(100%/2 - 180px/2)
+
+  display: flex
+  background: #FFFFFF
+  border-radius: 40px
+  border: none
+  padding: 9px 21px
+  align-items: center
+  display: none
+  p
+    color: var(--red-color)
+    margin-right: 4px
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+
+.carousel__img
+  border-radius: 35px 35px 0 0
+
+.swiper-button-prev,
+.swiper-button-next
+  background: #fff
+  height: 45px !important
+  width: 45px !important
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07)
+  border-radius: 8px
+  &::after
+    color: #404040
+    height: 10px
+    width: 10px
+    font-weight: 500
+    font-size: 20px !important
+    line-height: 140%
+    position: relative
+    top: -5px
+
+.swiper-button-prev
+  left: 30px !important
+  z-index: 100 o !important
+  
+.carousel__date
+  display: flex
+  align-items: center
+  margin-top: 10px
+  svg
+    margin-right: 5px
+    margin-left: 10px
+    path
+      fill: #D9D9D9
+  span
+    font-size: 14px
+    line-height: 140%
+    color: #B4B4B4
+
+.carousel__inscription
+  padding-bottom: 40px
+  margin-top: 5px
+  font-weight: 300
+  font-size: 16px
+  line-height: 140%
+  color: var(--text-black-color)
+  margin-left: 10px
+
+.carousel__btn
+  background: var(--blue-color)
+  border-radius: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 50px
+  width: 225px
+  p
+    font-weight: 500
+    font-size: 16px
+    line-height: 23px
+    color: white
+
+
+.quiz__btn
+  display: flex
+  align-items: center
+  justify-content: center
+  background: var(--blue-color)
+  border-radius: 40px
+  height: 50px
+  width: 284px
+  span
+    color: var(--turquoise-color)
+    font-weight: 500
+    line-height: 23px
+    margin-left: 8px
+
+.quiz__wrapper
+  display: flex
+  justify-content: space-between
+
+.quiz--secondary
+  max-width: 500px
+  .quiz__secondary--item
+    &:last-child
+      margin-top: var(--tiny-offset)
+
+.quiz__question--second
+  font-weight: 300
+  color: #474747
+
+.quiz--main
+  width: 1000px
+  background: #F1FAFF
+  border-radius: 20px
+  padding: var(--small-offset)
+  position: relative
+
+.quiz__info
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid rgba(93, 172, 223, 1)
+  padding-bottom: var(--small-offset)
+
+.quiz__type
+  display: flex
+
+.quiz__data
+  display: flex
+
+.quiz__data--date
+  display: flex
+  img
+    margin-right: 10px
+    width: 21px
+    height: 21px
+
+.quiz__question--second
+  margin-top: 15px
+
+.quiz__secondary--btn
+  margin-top: 15px
+
+.quiz__data--profile
+  display: flex
+  margin-left: 45px
+  img
+    margin-right: 10px
+    width: 21px
+    height: 21px
+
+.quiz__name
+  font-weight: 500
+  font-size: 18px
+  color: #474747
+  border-right: 1px solid var(--blue-color)
+  padding-right: var(--small-offset)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.quiz__hashtag
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #CCF4DE
+  border-radius: 40px
+  margin-left: 20px
+  span
+    padding: 5px var(--small-offset)
+    color: #01A856
+    font-weight: 500
+
+.quiz__img
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 30%
+  height: 70%
+
+.quiz__question
+  font-weight: 500
+  font-size: 20px
+  color: var(--text-black-color)
+  max-width: 825px
+  margin-top: var(--tiny-offset)
+  z-index: 5
+  position: relative
+
+.quiz__answer
+  margin-top: var(--tiny-offset)
+
+.quiz__secondary--btn
+  width: 150px
+  height: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid var(--blue-color)
+  border-radius: 20px
+  p
+    font-weight: 500
+    font-size: 12px
+    color: var(--blue-color)
+
+.quiz--btn
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 40px
+  width: 220px
+  height: 50px
+  border-radius: 40px
+  background: var(--blue-color)
+  p
+    font-weight: 500
+    font-size: 16px
+    line-height: 23px
+    text-align: center
+    color: #FFFFFF
+
+.quiz__info--secondary
+  background: #F1FAFF
+  padding: 15px var(--small-offset)
+  border-radius: 20px 20px 0 0
+
+.quiz__text--secondary
+  padding: 15px var(--small-offset)
+  border-radius: 0 0 20px 20px
+
+.quiz__secondary--item
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+  border-radius: 20px
+.radio--active
+  font-weight: 600
+  font-size: 16px
+  color: var(--blue-color)
+
+// кастомный чекбокс
+
+.control
+  display: block
+  position: relative
+  padding-left: 30px
+  margin-bottom: var(--tiny-offset)
+  cursor: pointer
+  font-size: 18px
+
+  // Hide default browser input
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+// Custom control
+.control__indicator
+  position: absolute
+  top: 2px
+  left: 0
+  height: 20px
+  width: 20px
+  background: #F1FAFF
+  border: 1px solid var(--blue-color)
+
+  .control--radio &
+    border-radius: 50% // Makes radio buttons circlular
+
+  // Hover and focus
+  .control:hover input ~ &,
+  .control input:focus ~ &
+    background: var(--blue-color)
+
+  // Hover when checked
+  .control:hover input:not([disabled]):checked ~ &,
+  .control input:checked:focus ~ &
+    background: #CAECFF
+
+  // Hide default browser input
+  .control input:disabled ~ &
+    background: gray
+    opacity: 0.6
+    pointer-events: none
+
+  &:after
+    content: ''
+    position: absolute
+    display: none // Hide check
+
+    .control input:checked ~ &
+      display: block // Show check
+
+    // Checkbox tick
+    .control--checkbox &
+      left: 8px
+      top: 4px
+      width: 3px
+      height: 8px
+      border: solid white
+      border-width: 0 2px 2px 0
+      transform: rotate(45deg)
+
+    // Disabled tick colour
+    .control--checkbox input:disabled ~ &
+      border-color: green
+
+    // Radio button inner circle
+    .control--radio &
+      left: 4px
+      top: 4px
+      height: 10px
+      width: 10px
+      border-radius: 50%
+      background: var(--blue-color)
+
+    // Disabled circle colour
+    .control--radio input:disabled ~ &
+      background: var(--blue-color)
+
+    .control input:checked
+      p
+        color: green
+
+// events
+
+.events
+  margin-top: var(--big-offset)
+
+.event__item
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 350px
+  height: 180px
+  background: white
+  padding: 20px
+  border-radius: 20px
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.04))
+
+.events__items
+  display: flex
+  justify-content: space-between
+
+.event__item--date
+  span
+    margin-left: 10px
+    color: var(--blue-color)
+
+.event__item--text
+  margin-top: 10px
+  font-weight: 300
+  color: var(--text-black-color)
+
+.event__btn
+  width: 150px
+  height: 30px
+  border-radius: 20px
+  border: 1px solid var(--blue-color)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: var(--tiny-offset)
+  span
+    color: var(--blue-color)
+    font-weight: 500
+    font-size: 12px
+
+.event__link
+  background: var(--white-color)
+  display: flex
+  align-items: center
+  justify-content: center
+
+.event__link--btn
+  display: flex
+  align-items: center
+  justify-content: center
+  background: var(--blue-color)
+  border-radius: 40px
+  height: 50px
+  padding: 0 var(--small-offset)
+  span
+    color: var(--turquoise-color)
+    font-weight: 500
+    line-height: 23px
+    margin-left: 8px
+//organizations
+
+.organizations__container
+  display: flex
+  justify-content: space-between
+
+.organizations
+  margin-top: var(--big-offset)
+
+.organizations__type--active
+  background: #F1FAFF
+  width: 100%
+  border-radius: var(--small-offset) var(--small-offset) 0 0
+  font-weight: 500
+  font-size: 18px
+  color: var(--title-black-color)
+
+.organizations__type--item
+  width: 375px
+  height: 78px
+  display: flex
+  align-items: center
+  padding: var(--small-offset)
+  img
+    margin-right: var(--small-offset)
+  strong
+    font-weight: 300
+    font-size: 18px
+    line-height: 140%
+    color: var(--text-black-color)
+
+.organizations__list
+  max-height: calc( 375px - 78px )
+
+.organizations__type
+  max-width: 375px
+
+.organizations__name
+  margin-left: var(--tiny-offset)
+  width: 100%
+  min-width: 0px
+
+.organizations__name--item
+  display: flex
+  flex-direction: column
+  display: flex
+  padding: var(--small-offset)
+  img
+    margin-right: var(--small-offset)
+
+.organizations__list
+  .organizations__name--item
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      bottom: 0
+      left: 0
+      height: 1px
+      width: 95%
+      background: #F3F3F3
+.organizations__name--title
+  display: flex
+  font-size: 18px
+  line-height: 160%
+  color: #474747
+
+.organizations__name--adress
+  display: flex
+  align-items: center
+  margin-top: 5px
+  img
+    width: 24px
+    height: 24px
+    margin-right: 5px
+  p
+    font-weight: 300
+    font-size: 18px
+    line-height: 160%
+    color: #474747
+
+.organizations__name--phone
+  display: flex
+  align-items: center
+  margin-top: 5px
+  img
+    width: 24px
+    height: 24px
+    margin-right: 5px
+  p
+    font-weight: 300
+    font-size: 18px
+    line-height: 160%
+    color: var(--blue-color)
+    border-bottom: 1px solid var(--blue-color)
+
+.organizations__name--active
+  background: #F1FAFF
+  border-radius: var(--small-offset) var(--small-offset) 0 0
+  strong
+    font-weight: 500
+    font-size: 20px
+    color: var(--title-black-color)
+
+// footer
+
+.footer
+  height: 125px
+  border-top: 1px solid #DFDFDF
+  margin-top: 60px
+
+.footer__container
+  height: 100%
+
+.footer__items
+  display: flex
+  justify-content: space-between
+
+.footer__item
+  display: flex
+  align-items: center
+
+.footer__contacts
+  display: flex
+  img
+    width: 30px
+    height: 30px
+    margin-right: 10px
+
+.footer__contacts-text
+  display: flex
+  flex-direction: column
+  width: 225px
+
+.footer__nav
+  ul
+    display: flex
+    li
+      margin-right: 20px
+
+.footer__number
+  font-weight: 600
+  font-size: 21px
+  line-height: 30px
+  color: #000000
+
+.footer__link
+  font-weight: 500
+  font-size: 18px
+  line-height: 26px
+  color: #000000
+
+.footer__mail
+  font-size: 20px
+  line-height: 29px
+  color: #000000
+
+.footer__privace-policy
+  display: flex
+  justify-content: space-between
+  padding-bottom: 10px
+  p,a
+    font-weight: 300
+    font-size: 15px
+    line-height: 22px
+    color: #8A8A8A
+  a
+    border-bottom: 1px solid #8A8A8A
+    max-width: 352px
+
+.main__notification
+  padding: 0
+  margin: 0 30px
+
+.googleMap
+  max-width: 3000px
+  margin: 0 auto
+  img
+    width: 100%
+// адаптив
+
+@media (max-width: 1540px)
+  .boards__wrapper
+    flex-wrap: wrap
+  .board
+    width: 100%
+  .board__items
+    max-width: none
+  .board__item
+    max-width: none
+  .quiz__wrapper
+    flex-direction: column
+  .quiz--main
+    width: 100%
+  .quiz--secondary
+    display: flex
+    flex-direction: row
+    max-width: none
+    .quiz__secondary--item
+      &:first-child
+        margin-right: var(--tiny-offset)
+  .quiz__secondary--item
+    margin-top: var(--tiny-offset)
+
+@media (max-width: 1490px)
+  .main__items
+    display: grid
+    grid-template-areas: "A A" "B C"
+    gap: var(--tiny-offset)
+  .main__item--profile
+    display: flex
+    max-width: 100%
+    grid-area: A
+  .main__item--local
+    display: flex
+    max-width: 1000px
+    width: 48vw
+    grid-area: B
+  .main__item--notifications
+    grid-area: C
+    max-width: 1000px
+    width: 48vw
+  .events__items
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: var(--tiny-offset)
+  .event__item
+    width: 100%
+
+@media (max-width: 1400px)
+  .events__choose
+    a
+      padding: 11px 20px
+
+  .header__item
+    margin: 0
+
+@media (max-width: 935px)
+  .main__item--local
+    height: 450px
+  .main__item--notifications
+    grid-area: C
+    max-width: 1000px
+    width: 48vw
+  .main__btn--green
+    margin-bottom: 20px
+  .main__messages
+    max-height: 298px
+  .main__item--notifications
+    height: 450px
+
+@media (max-width: 670px)
+  .defaultTitle
+    display: flex
+    flex-direction: column
+
+@media (max-width: 642px)
+  .main__items
+    grid-template-areas: "A" "B" "C"
+  .main__item--local
+    width: calc( 100vw - 20px )
+  .main__item--notifications
+    margin-top: var(--tiny-offset)
+    width: calc( 100vw - 20px )
+  .main__btns
+    flex-direction: column
+    margin-top: var(--tiny-offset)
+    .main__btn
+      &:not(:first-child)
+        margin-top: var(--tiny-offset)
+
+@media (max-width: 850px)
+  .quiz--secondary
+    flex-direction: column
+  .quiz--secondary
+    .quiz__secondary--item:first-child
+      margin-right: 0
+  .quiz__info
+    flex-direction: column
+  .quiz__data
+    margin-top: var(--tiny-offset)
+  .quiz__name
+    padding-right: 5px
+  .quiz__hashtag
+    margin-left: 5px
+
+@media (max-width: 825px)
+  .organizations__container
+    display: flex
+    flex-direction: column
+  .organizations__name
+    margin-left: 0
+    margin-top: var(--tiny-offset)
+  .organizations__type
+    width: 100%
+    max-width: 100%
+  .organizations__type--item
+    width: 100%
+  .main__item
+    padding: 20px
+    height: 100%
+  .main__title-wrapper h3
+    font-size: 18px
+@media (max-width: 600px)
+  .carousel__item-wrapper
+    max-width: none
+
+@media (max-width: 575px)
+  .quiz__img
+    display: none
+@media (max-width: 505px)
+  .events__items
+    grid-template-columns: 1fr
+  .board__items
+    grid-template-columns: 1fr
+    max-height: none
+
+@media (max-width: 800px)
+  .events__content
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+  .events__content--item
+    justify-content: center
+    margin-top: 0
+    align-items: left
+  .defautTitle--text
+    font-size: 25px
+    padding: 16px 40px
+    line-height: 40px
+@media (max-width: 478px)
+  .carousel__link
+    top: 80px

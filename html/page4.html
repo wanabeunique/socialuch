@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" language="javascript"></script>
+  <script src="./../js/jquery.MultiFile.js" type="text/javascript" language="javascript"></script>
+  <script defer src="./../js/page4.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container-wrap  ">
+      <div class="header__logo">
+        <img src="./../img/header/logo.png" alt="">
+      </div>
+
+      <input id="burger" type="checkbox" class="burger" onclick="scrollDisable(event)"/>
+      <label for="burger" class="burger-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav class="header__nav">
+      <div class="header__social header__item">
+        <strong class="header__text">Телефон<span>+7 (831) 987-77-54</span></strong>
+      </div>
+      <div class="header__social header__item">
+        <strong class="header__text">E-mail<span>social@nn.ru</span></strong>
+      </div>
+      <a href="#" class="btnAcc header__item header__lk btnAcc--logined">
+        <img src="./../img/header/lk-active.svg" alt="">
+        <p class="btnAcc__text">Личный кабинет</p>
+        <span class="header__notification">
+          <img src="./../img/header/notificationsWhite.svg" alt="">
+        </span>
+      </a>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="page__container container-wrap">
+        <a href="#" class="page__link">Главная&nbsp; / Личный кабинет социального участкового&nbsp; / Проблемы на территории&nbsp; / Поломка отопления в доме&nbsp;</a><span class="page__current">/ Редактирование проблемы</span>
+      </div>
+    </div>
+    <section class="editing">
+      <div class="editing__container container-wrap">
+        <div class="defaultTitle">
+          <h3 class="defautTitle--text">Редактирование проблемы</h3>
+        </div>
+        <div class="editing__item"> 
+          <p>Улица</p>
+          <input type="text" class="editing__street--input">
+        </div>
+        <div class="editing__item"> 
+          <p>Установить точку на карте</p>
+          <img src="./../img/page4/map4page.jpg" alt="">
+        </div>
+        <div class="editing__item"> 
+          <p>Категория проблемы</p>
+          <form class="editing__select">
+            <input class="chosen-value chosen-value--first editing__input--adress" type="text" value="" placeholder="Добавить категорию">
+            <ul class="value-list value-list--first">
+              <li class="editing__select--first">Alabama</li>
+              <li class="editing__select--first">Alaska</li>
+              <li class="editing__select--first">Arizona</li>
+              <li class="editing__select--first">Arkansas</li>
+              <li class="editing__select--first">California</li>
+              <li class="editing__select--first">Colorado</li>
+              <li class="editing__select--first">Connecticut</li>
+              <li class="editing__select--first">Delaware</li>
+              <li class="editing__select--first">Florida</li>
+              <li class="editing__select--first">Georgia</li>
+              <li class="editing__select--first">Hawaii</li>
+              <li class="editing__select--first">Idaho</li>
+              <li class="editing__select--first">Illinois</li>
+              <li class="editing__select--first">Indiana</li>
+              <li class="editing__select--first">Iowa</li>
+              <li class="editing__select--first">Kansas</li>
+              <li class="editing__select--first">Kentucky</li>
+              <li class="editing__select--first">Louisiana</li>
+              <li class="editing__select--first">Maine</li>
+              <li class="editing__select--first">Maryland</li>
+              <li class="editing__select--first">Massachusetts</li>
+              <li class="editing__select--first">Michigan</li>
+              <li class="editing__select--first">Minnesota</li>
+              <li class="editing__select--first">Mississippi</li>
+              <li class="editing__select--first">Missouri</li>
+              <li class="editing__select--first">Montana</li>
+              <li class="editing__select--first">Nebraska</li>
+              <li class="editing__select--first">Nevada</li>
+              <li class="editing__select--first">New Hampshire</li>
+              <li class="editing__select--first">New Jersey</li>
+              <li class="editing__select--first">New Mexico</li>
+              <li class="editing__select--first">New York</li>
+            </ul>
+          </form>
+        </div>
+        <div class="editing__item"> 
+          <p>Текстовое описание</p>
+          <textarea class="editing__textarea" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="editing__item"> 
+          <p>Статус проблемы</p>
+          <div class="editing__status">
+            <form class="editing__select">
+              <input class="chosen-value chosen-value--second editing__input--category" type="text" value="" placeholder="Добавить статус">
+              <ul class="value-list value-list--second">
+                <li class="editing__select--second">Alabama</li>
+                <li class="editing__select--second">Alaska</li>
+                <li class="editing__select--second">Arizona</li>
+                <li class="editing__select--second">Arkansas</li>
+                <li class="editing__select--second">California</li>
+                <li class="editing__select--second">Colorado</li>
+                <li class="editing__select--second">Connecticut</li>
+                <li class="editing__select--second">Delaware</li>
+                <li class="editing__select--second">Florida</li>
+                <li class="editing__select--second">Georgia</li>
+                <li class="editing__select--second">Hawaii</li>
+                <li class="editing__select--second">Idaho</li>
+                <li class="editing__select--second">Illinois</li>
+                <li class="editing__select--second">Indiana</li>
+                <li class="editing__select--second">Iowa</li>
+                <li class="editing__select--second">Kansas</li>
+                <li class="editing__select--second">Kentucky</li>
+                <li class="editing__select--second">Louisiana</li>
+                <li class="editing__select--second">Maine</li>
+                <li class="editing__select--second">Maryland</li>
+                <li class="editing__select--second">Massachusetts</li>
+                <li class="editing__select--second">Michigan</li>
+                <li class="editing__select--second">Minnesota</li>
+                <li class="editing__select--second">Mississippi</li>
+                <li class="editing__select--second">Missouri</li>
+                <li class="editing__select--second">Montana</li>
+                <li class="editing__select--second">Nebraska</li>
+                <li class="editing__select--second">Nevada</li>
+                <li class="editing__select--second">New Hampshire</li>
+                <li class="editing__select--second">New Jersey</li>
+                <li class="editing__select--second">New Mexico</li>
+                <li class="editing__select--second">New York</li>
+                <li class="editing__select--second">North Carolina</li>
+                <li class="editing__select--second">North Dakota</li>
+                <li class="editing__select--second">Ohio</li>
+                <li class="editing__select--second">Oklahoma</li>
+                <li class="editing__select--second">Oregon</li>
+              </ul>
+            </form>
+            <form class="editing__select">
+              <input class="chosen-value chosen-value--third editing__input--category" type="text" value="" placeholder="Добавить статус">
+              <ul class="value-list value-list--third">
+                  <li class="editing__select--third">Alabama</li>
+                  <li class="editing__select--third">Alaska</li>
+                  <li class="editing__select--third">Arizona</li>
+                  <li class="editing__select--third">Arkansas</li>
+                  <li class="editing__select--third">California</li>
+                  <li class="editing__select--third">Colorado</li>
+                  <li class="editing__select--third">Connecticut</li>
+                  <li class="editing__select--third">Delaware</li>
+                  <li class="editing__select--third">Florida</li>
+                  <li class="editing__select--third">Georgia</li>
+                  <li class="editing__select--third">Hawaii</li>
+                  <li class="editing__select--third">Idaho</li>
+                  <li class="editing__select--third">Illinois</li>
+                  <li class="editing__select--third">Indiana</li>
+                  <li class="editing__select--third">Iowa</li>
+                  <li class="editing__select--third">Kansas</li>
+                  <li class="editing__select--third">Kentucky</li>
+                  <li class="editing__select--third">Louisiana</li>
+                  <li class="editing__select--third">Maine</li>
+                  <li class="editing__select--third">Maryland</li>
+                  <li class="editing__select--third">Massachusetts</li>
+                  <li class="editing__select--third">Michigan</li>
+                  <li class="editing__select--third">Minnesota</li>
+                  <li class="editing__select--third">Mississippi</li>
+                  <li class="editing__select--third">Missouri</li>
+                  <li class="editing__select--third">Montana</li>
+                  <li class="editing__select--third">Nebraska</li>
+                  <li class="editing__select--third">Nevada</li>
+                  <li class="editing__select--third">New Hampshire</li>
+                  <li class="editing__select--third">New Jersey</li>
+                  <li class="editing__select--third">New Mexico</li>
+                  <li class="editing__select--third">New York</li>
+                  <li class="editing__select--third">North Carolina</li>
+                  <li class="editing__select--third">North Dakota</li>
+              </ul>
+            </form>
+            <form class="editing__select">
+              <input class="chosen-value chosen-value--fourth editing__input--category" type="text" value="" placeholder="Добавить статус">
+              <ul class="value-list value-list--fourth">
+                  <li class="editing__select--fourth">Alabama</li>
+                  <li class="editing__select--fourth">Alaska</li>
+                  <li class="editing__select--fourth">Arizona</li>
+                  <li class="editing__select--fourth">Arkansas</li>
+                  <li class="editing__select--fourth">California</li>
+                  <li class="editing__select--fourth">Colorado</li>
+                  <li class="editing__select--fourth">Connecticut</li>
+                  <li class="editing__select--fourth">Delaware</li>
+                  <li class="editing__select--fourth">Florida</li>
+                  <li class="editing__select--fourth">Georgia</li>
+                  <li class="editing__select--fourth">Hawaii</li>
+                  <li class="editing__select--fourth">Idaho</li>
+                  <li class="editing__select--fourth">Illinois</li>
+                  <li class="editing__select--fourth">Indiana</li>
+                  <li class="editing__select--fourth">Iowa</li>
+                  <li class="editing__select--fourth">Kansas</li>
+                  <li class="editing__select--fourth">Kentucky</li>
+                  <li class="editing__select--fourth">Louisiana</li>
+                  <li class="editing__select--fourth">Maine</li>
+                  <li class="editing__select--fourth">Maryland</li>
+                  <li class="editing__select--fourth">Massachusetts</li>
+                  <li class="editing__select--fourth">Michigan</li>
+                  <li class="editing__select--fourth">Minnesota</li>
+                  <li class="editing__select--fourth">Mississippi</li>
+                  <li class="editing__select--fourth">Missouri</li>
+                  <li class="editing__select--fourth">Montana</li>
+                  <li class="editing__select--fourth">Nebraska</li>
+                  <li class="editing__select--fourth">Nevada</li>
+                  <li class="editing__select--fourth">New Hampshire</li>
+                  <li class="editing__select--fourth">New Jersey</li>
+                  <li class="editing__select--fourth">New Mexico</li>
+                  <li class="editing__select--fourth">New York</li>
+                  <li class="editing__select--fourth">North Carolina</li>
+                  <li class="editing__select--fourth">North Dakota</li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="editing__item"> 
+          <p>Установить точку на карте</p>
+          <div class="editing__date--wrapper">
+            <input class="editing__date" type="date">
+          </div>
+        </div>
+        <div class="editing__item"> 
+          <div class="editing__news">
+            <form class="editing__select">
+              <input class="chosen-value chosen-value--five editing__input--category" type="text" value="" placeholder="Добавить">
+              <ul class="value-list value-list--five">
+                  <li class="editing__select--five">Alabama</li>
+                  <li class="editing__select--five">Alaska</li>
+                  <li class="editing__select--five">Arizona</li>
+                  <li class="editing__select--five">Arkansas</li>
+                  <li class="editing__select--five">California</li>
+                  <li class="editing__select--five">Colorado</li>
+                  <li class="editing__select--five">Connecticut</li>
+                  <li class="editing__select--five">Delaware</li>
+                  <li class="editing__select--five">Florida</li>
+                  <li class="editing__select--five">Georgia</li>
+                  <li class="editing__select--five">Hawaii</li>
+                  <li class="editing__select--five">Idaho</li>
+                  <li class="editing__select--five">Illinois</li>
+                  <li class="editing__select--five">Indiana</li>
+                  <li class="editing__select--five">Iowa</li>
+                  <li class="editing__select--five">Kansas</li>
+                  <li class="editing__select--five">Kentucky</li>
+                  <li class="editing__select--five">Louisiana</li>
+                  <li class="editing__select--five">Maine</li>
+                  <li class="editing__select--five">Maryland</li>
+                  <li class="editing__select--five">Massachusetts</li>
+                  <li class="editing__select--five">Michigan</li>
+                  <li class="editing__select--five">Minnesota</li>
+                  <li class="editing__select--five">Mississippi</li>
+                  <li class="editing__select--five">Missouri</li>
+                  <li class="editing__select--five">Montana</li>
+                  <li class="editing__select--five">Nebraska</li>
+                  <li class="editing__select--five">Nevada</li>
+                  <li class="editing__select--five">New Hampshire</li>
+                  <li class="editing__select--five">New Jersey</li>
+                  <li class="editing__select--five">New Mexico</li>
+                  <li class="editing__select--five">New York</li>
+                  <li class="editing__select--five">North Carolina</li>
+                  <li class="editing__select--five">North Dakota</li>
+              </ul>
+            </form>
+            <form class="editing__select">
+              <input class="chosen-value chosen-value--six editing__input--category" type="text" value="" placeholder="Добавить">
+              <ul class="value-list value-list--six">
+                  <li class="editing__select--six">Alabama</li>
+                  <li class="editing__select--six">Alaska</li>
+                  <li class="editing__select--six">Arizona</li>
+                  <li class="editing__select--six">Arkansas</li>
+                  <li class="editing__select--six">California</li>
+                  <li class="editing__select--six">Colorado</li>
+                  <li class="editing__select--six">Connecticut</li>
+                  <li class="editing__select--six">Delaware</li>
+                  <li class="editing__select--six">Florida</li>
+                  <li class="editing__select--six">Georgia</li>
+                  <li class="editing__select--six">Hawaii</li>
+                  <li class="editing__select--six">Idaho</li>
+                  <li class="editing__select--six">Illinois</li>
+                  <li class="editing__select--six">Indiana</li>
+                  <li class="editing__select--six">Iowa</li>
+                  <li class="editing__select--six">Kansas</li>
+                  <li class="editing__select--six">Kentucky</li>
+                  <li class="editing__select--six">Louisiana</li>
+                  <li class="editing__select--six">Maine</li>
+                  <li class="editing__select--six">Maryland</li>
+                  <li class="editing__select--six">Massachusetts</li>
+                  <li class="editing__select--six">Michigan</li>
+                  <li class="editing__select--six">Minnesota</li>
+                  <li class="editing__select--six">Mississippi</li>
+                  <li class="editing__select--six">Missouri</li>
+                  <li class="editing__select--six">Montana</li>
+                  <li class="editing__select--six">Nebraska</li>
+                  <li class="editing__select--six">Nevada</li>
+                  <li class="editing__select--six">New Hampshire</li>
+                  <li class="editing__select--six">New Jersey</li>
+                  <li class="editing__select--six">New Mexico</li>
+                  <li class="editing__select--six">New York</li>
+                  <li class="editing__select--six">North Carolina</li>
+                  <li class="editing__select--six">North Dakota</li>
+              </ul>
+            </form>
+            <form class="editing__select">
+              <input class="chosen-value chosen-value--seven editing__input--category" type="text" value="" placeholder="Добавить">
+              <ul class="value-list value-list--seven">
+                  <li class="editing__select--seven">Alabama</li>
+                  <li class="editing__select--seven">Alaska</li>
+                  <li class="editing__select--seven">Arizona</li>
+                  <li class="editing__select--seven">Arkansas</li>
+                  <li class="editing__select--seven">California</li>
+                  <li class="editing__select--seven">Colorado</li>
+                  <li class="editing__select--seven">Connecticut</li>
+                  <li class="editing__select--seven">Delaware</li>
+                  <li class="editing__select--seven">Florida</li>
+                  <li class="editing__select--seven">Georgia</li>
+                  <li class="editing__select--seven">Hawaii</li>
+                  <li class="editing__select--seven">Idaho</li>
+                  <li class="editing__select--seven">Illinois</li>
+                  <li class="editing__select--seven">Indiana</li>
+                  <li class="editing__select--seven">Iowa</li>
+                  <li class="editing__select--seven">Kansas</li>
+                  <li class="editing__select--seven">Kentucky</li>
+                  <li class="editing__select--seven">Louisiana</li>
+                  <li class="editing__select--seven">Maine</li>
+                  <li class="editing__select--seven">Maryland</li>
+                  <li class="editing__select--seven">Massachusetts</li>
+                  <li class="editing__select--seven">Michigan</li>
+                  <li class="editing__select--seven">Minnesota</li>
+                  <li class="editing__select--seven">Mississippi</li>
+                  <li class="editing__select--seven">Missouri</li>
+                  <li class="editing__select--seven">Montana</li>
+                  <li class="editing__select--seven">Nebraska</li>
+                  <li class="editing__select--seven">Nevada</li>
+                  <li class="editing__select--seven">New Hampshire</li>
+                  <li class="editing__select--seven">New Jersey</li>
+                  <li class="editing__select--seven">New Mexico</li>
+                  <li class="editing__select--seven">New York</li>
+                  <li class="editing__select--seven">North Carolina</li>
+                  <li class="editing__select--seven">North Dakota</li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="editing__item editing__upload--container">
+          <p>Прикрепленные файлы:</p>
+          <label class="editing__upload--wrapper">
+            <input class="editing__upload" type="file" id="editing__upload"/>
+            <div class="editing__upload--text">
+              <img src="./../img/page4/addFile.svg" alt="">
+              <span>Добавить файл</span>
+            </div>
+          </label>
+          <div class="editing__files">
+            <!-- Файлы из и editing__upload-->
+          </div>
+          <div class="editing__btns">
+            <a href="#" class="editing__btn editing__btn--blue">
+              <img src="./../img/page4/sendBtn.svg" alt="">
+              <span>Опубликовать</span>
+            </a>
+            <a href="#" class="editing__btn editing__btn--white">
+              <img src="./../img/page4/leftArrow.svg" alt="">
+              <span>Назад</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <input type="file" class="multi-pt" /> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container-wrap">
+      <ul class="footer__items">
+        <li class="footer__item"><img src="./../img/footer/logo.png" alt=""></li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/phone.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">Телефон тех поддержки</strong>
+            <span class="footer__number">+7 (831) 987-77-54</span>
+          </div>
+        </li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/message.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">E-mail тех поддержки</strong>
+            <span class="footer__mail">social@nn.ru</span>
+          </div>
+        </li>
+        <li class="footer__item footer__nav">
+          <ul>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Главная</a>          
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Новости</a>          
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item footer__btn">
+          <a href="#" class="btnAcc">
+            <img src="img/btnPic.svg" alt="">
+            <p class="btnAcc__text">Личный кабинет</p>         
+          </a>
+        </li>
+      </ul>
+      <div class="footer__privace-policy">
+        <p>&copy;&nbsp;2022&ndash;2022 Проект &laquo;Социальный участковый&raquo;</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

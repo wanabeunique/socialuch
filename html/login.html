@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+  <script src="./../js/auth.js"></script>
+  <link rel="stylesheet" href="./../css/style.css">
+  
+</head>
+<body>
+    <ons-page class="auth phone--container">
+      <div class="auth__form">
+        <img class="auth__form--img" src="./../img/footer/logo.png" alt="">
+        <h1 class="auth__form--title">Вход в учетную запись</h1>
+        <h2 class="auth__form--subtitle">Введите данные, указанные при регистрации</h2>
+        <div class="auth__form--input auth__name"><img src="./../img/auth/profile.svg" alt=""><input type="text" class="text-input" placeholder="ФИО" value=""></div>
+        <div class="auth__form--input auth__phone"><img src="./../img/auth/lock.svg" alt=""><input type="text" class="text-input" placeholder="Введите пароль" value=""></div>
+        <ons-button class="auth__form--buttons auths__btn auths__btn-blue">Регистрация через Госуслуги</ons-button>
+        <ons-button class="auth__form--buttons auths__btn auths__btn-green">Войти</ons-button>
+        <a href="#" class="auth__form--help">Забыли пароль?</a>
+        <div class="auth__form--checkbox">
+          <label class="checkbox checkbox--material">
+            <input type="checkbox" class="checkbox__input checkbox--material__input" checked="checked">
+            <div class="checkbox__checkmark checkbox--material__checkmark"></div>
+          </label>
+          <p class="auth__form--text">Нажимая на кнопку Вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></p>
+        </div>
+        <div class="auth__form--bg"><img src="./../img/auth/bg.svg" alt=""></div>
+      </div>
+    </ons-page>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="./../css/style.css">
+  
+</head>
+<body>
+    <ons-page class="auth phone--container">
+      <ons-toolbar class="auth__nav" style="background: none;">
+        <div class="toolbar__left">
+          <ons-back-button></ons-back-button>
+        </div>
+      </ons-toolbar>
+      <div class="auth__form">
+        <img class="auth__form--img" src="./../img/footer/logo.png" alt="">
+        <h1 class="auth__form--title">Регистрация</h1>
+        <h2 class="auth__form--subtitle">Новая учетная запись</h2>
+        <div class="auth__form--input auth__name"><img src="./../img/auth/profile.svg" alt=""><input type="text" class="text-input" placeholder="ФИО" value=""></div>
+        <div class="auth__form--input auth__phone"><img src="./../img/auth/phone.svg" alt=""><input type="tel" class="text-input" placeholder="Телефон" value=""></div>
+        <!-- hidden inputs -->
+        <div class="auth__form--input auth__mail"><img src="./../img/auth/mail.svg"><input type="mail" class="text-input" placeholder="E-mail" value=""></div>
+        <div class="auth__form--input auth__place"><img src="./../img/auth/place.svg" alt=""><input type="text" class="text-input" placeholder="Район проживания" value=""></div>
+        <div class="auth__form--blur">
+          <div class="blur--container">
+            <div class="auth__form--input auth__password"><img src="./../img/auth/lock.svg" alt=""><input type="password" class="text-input" placeholder="Придумайте пароль" value=""></div>
+            <div class="auth__form--input auth__repeatPassword"><img src="./../img/auth/reset.svg" alt=""><input type="password" class="text-input" placeholder="Повторите пароль" value=""></div>
+            
+            <img class="auth__form-captcha" src="./../img/auth/captcha.jpg" alt="">
+            <ons-button class="auth__form--buttons auths__btn auths__btn-blue">Регистрация через Госуслуги</ons-button>
+            <ons-button class="auth__form--buttons auths__btn auths__btn-green" onclick="enterPassword(this)">Продолжить</ons-button>
+  
+            <div class="auth__form--checkbox">
+              <label class="checkbox checkbox--material">
+                <input type="checkbox" class="checkbox__input checkbox--material__input" checked="checked">
+                <div class="checkbox__checkmark checkbox--material__checkmark"></div>
+              </label>
+              <p class="auth__form--text">Нажимая на кнопку Вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></p>
+            </div>
+          </div>
+          <div class="auth__form--bg"><img src="./../img/auth/bg.svg" alt=""></div>
+        </div>
+        </div>
+    </ons-page>
+    <script src="./../js/auth.js"></script>
+</body>
+</html>

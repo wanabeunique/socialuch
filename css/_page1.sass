@@ -1,0 +1,492 @@
+//hero
+
+.hero
+  background-image: url("./../img/page1/hero/heroBG.svg")
+  background-repeat: no-repeat
+  background-position: center center
+  height: 602px
+
+.hero__container
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.hero__intro
+  max-width: 752px
+  span
+    font-size: 34px
+    line-height: 120%
+    color: var(--title-black-color)
+  .hero__title
+    font-weight: 600
+    font-size: 65px
+    line-height: 120%
+    margin-bottom: var(--tiny-offset)
+  .hero__text
+    color: var(--text-black-color)
+  .hero__btns
+    display: flex
+    margin-top: var(--middle-offset)
+    .hero__btn
+      background: rgba(255, 255, 255, 0.7)
+      border: 1px solid var(--green-color)
+      border-radius: 40px
+      color: var(--green-color)
+      padding: 14px var(--middle-offset)
+      &:not(:last-child)
+        margin-right: 10px
+
+.hero__btn-left
+  img
+    max-width: 13px
+    max-height: 13px
+    margin-left: 10px
+
+.hero__btn-right
+  img
+    width: 20px
+    height: 20px
+    margin-right: 10px
+
+.hero__btn
+  display: flex
+  align-items: center
+.hero__form
+  background: var(--white-color)
+  box-shadow: 0px 4px 100px rgba(78, 78, 78, 0.05)
+  border-radius: 20px
+  max-width: 454px
+
+.hero__form-wrapper
+  padding: 50px
+  display: flex
+  flex-direction: column
+  max-width: 454px
+  .hero__input
+    width: 100%
+    background: #FFFFFF
+    border: 1px solid #EDEDED
+    border-radius: 40px
+    height: 50px
+    &::placeholder
+      font-size: 14px
+      line-height: 140%
+      color: #ADADAD
+  h2
+    font-weight: 600
+    font-size: 27px
+    line-height: 140%
+    color: var(--text-black-color)
+
+.hero__agreement
+  display: flex
+  margin-top: 20px
+
+.hero__agreement-text
+  font-weight: 500
+  font-size: 10px
+  line-height: 140%
+  color: #8D8D8D
+  margin-left: 12px
+  a
+    color: #8D8D8D
+    border-bottom: 1px solid #8D8D8D
+
+.hero__form-btn
+  height: 50px
+  background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+  border: none
+  border-radius: 40px
+  margin-top: var(--tiny-offset)
+  span
+    font-weight: 600
+    font-size: 18px
+    line-height: 26px
+    text-align: center
+    color: #FFFFFF
+
+.hero__contacts
+  display: flex
+  .hero__input-wrapper
+    &:not(:last-child)
+      margin-right: 10px
+
+// Картинки для инпута
+.hero__input-wrapper
+  position: relative
+  margin-top: var(--tiny-offset)
+  input
+    padding: 0 40px
+  img
+    position: absolute
+    left: 10px
+    height: 25px
+    top: 12.5px
+    width: 25px
+
+// политика конфеденциальности чекбокс
+.hero__checkbox[type="checkbox"]
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none
+  /* Remove most all native input styles */
+  appearance: none
+  /* For iOS < 15 */
+  background-color: var(--form-background)
+  /* Not removed via appearance */
+  margin: 0
+
+  font: inherit
+  color: var(--red-color)
+  width: 1.15em
+  height: 1.15em
+  border: 0.15em solid currentColor
+  border-radius: 0.15em
+  transform: translateY(-0.075em)
+
+  display: grid
+  place-content: center
+
+.hero__checkbox::before
+  content: ""
+  width: 0.65em
+  height: 0.65em
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%)
+  transform: scale(0)
+  transform-origin: bottom left
+  transition: 120ms transform ease-in-out
+  box-shadow: inset 1em 1em var(--form-control-color)
+  /* Windows High Contrast Mode */
+  background: var(--red-color)
+
+.hero__checkbox:checked::before
+  transform: scale(1)
+
+// about
+.about
+  margin-top: var(--big-offset)
+
+.about__container
+  display: flex
+  justify-content: space-between
+
+.about__img
+  //margin-left: 80px Как в макете плохо выглядит
+
+.about__item
+  display: flex
+  position: relative
+  padding: 0 5px
+  &::before
+    content: ''
+    width: 32px
+    height: 2px
+    position: absolute
+    bottom: 0
+    left: 0
+    background: var(--red-color)
+
+.about__title
+  max-width: 270px
+  font-weight: 500
+  font-size: 20px
+  line-height: 140%
+  color: #474747
+
+// news
+
+.news
+  margin-top: var(--big-offset)
+
+.news__title
+  margin-bottom: var(--middle-offset)
+  display: flex
+  justify-content: space-between
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+  color: #242424
+
+.news__title-btn
+  padding: 16px 45px
+  background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+  border-radius: 40px
+  display: flex
+  align-items: center
+  p
+    font-weight: 500
+    font-size: 18px
+    line-height: 26px
+    color: white
+    margin-right: 12px
+
+.news__text
+  max-width: 336px
+  margin-left: 10px
+
+.news__items
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  background: var(--white-color)
+  border-radius: 20px
+  padding-bottom: var(--middle-offset)
+
+.news__item
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.news__item-wrapper
+  max-width: 355px
+  margin-top: var(--middle-offset)
+  display: flex
+  flex-direction: column
+  align-items: left
+  margin-left: 20px
+  position: relative
+  &:hover
+    background: #FFFFFF
+    box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.05)
+    border-radius: 35px
+    .news__link
+      display: flex
+    svg
+      path
+        fill: var(--green-color)
+    .news__inscription
+      color: var(--text-black-color)
+      font-weight: 500
+      line-height: 140%
+
+    span
+      color: var(--green-color)
+
+.news__link
+  position: absolute
+  left: calc(100%/2 - 128px/2)
+  top: calc(100%/2 - 128px/2)
+
+  display: flex
+  background: #FFFFFF
+  border-radius: 40px
+  border: none
+  padding: 9px 21px
+  align-items: center
+  display: none
+  p
+    color: var(--red-color)
+    margin-right: 4px
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+
+.news__img
+  border-radius: 35px
+
+.news__date
+  display: flex
+  align-items: center
+  margin-top: 10px
+  svg
+    margin-right: 5px
+    path
+      fill: #D9D9D9
+  span
+    font-size: 14px
+    line-height: 140%
+    color: #B4B4B4
+
+.news__inscription
+  padding-bottom: 40px
+  margin-top: 5px
+  font-weight: 300
+  font-size: 16px
+  line-height: 140%
+  color: var(--text-black-color)
+
+// map
+
+.map
+  background-image: url("./../img/page1/map/map.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  height: 400px
+  margin-top: var(--big-offset)
+
+.map__container
+  height: 100%
+
+.map__wrapper
+  margin-left: 100px
+  display: flex
+  flex-direction: column
+
+.map__title
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+  color: #FFFFFF
+  padding-top: 100px
+
+.map__text
+  font-weight: 300
+  font-size: 18px
+  line-height: 140%
+  color: #FFFFFF
+  max-width: 658px
+
+.map__btn
+  background: white
+  padding: 12px 50px
+  border-radius: 40px
+  margin-top: 40px
+  max-width: 264px
+  display: flex
+  align-items: center
+  span
+    margin-right: 13px
+    font-weight: 600
+    font-size: 18px
+    line-height: 26px
+    color: var(--green-color)
+
+// адаптив
+@media (max-width: 1556px)
+  .news__items
+    grid-template-columns: 1fr 1fr 1fr
+
+@media (max-width: 1264px)
+  .hero
+    height: 100%
+  .hero__intro
+    max-width: 550px
+  .hero__container
+    //flex-direction: column
+    justify-content: space-between
+    align-items: center
+  .hero__intro
+    padding-top: var(--middle-offset)
+    width: 100%
+  .hero__form
+    margin-top: 10px
+  .about__container
+    flex-wrap: wrap
+    justify-content: space-evenly
+  .about__item
+    &:last-child
+      margin-top: var(--small-offset)
+  .map__wrapper
+    margin-left: 50px
+  .about__title
+    font-size: 18px
+
+@media (max-width: 1200px)
+  .news__items
+    grid-template-columns: 1fr 1fr
+  .news__item-wrapper
+    width: 95%
+    max-width: 800px
+  .news__img
+    width: 100%
+@media (max-width: 1099px)
+  .map__wrapper
+    margin-left: 10px
+    max-width: 550px
+
+@media (max-width:1023px)
+  .hero__container
+    display: flex
+    flex-direction: column
+  .hero__intro
+    max-width: 650px
+    margin-bottom: 20px
+
+@media (max-width: 825px)
+  .about__item
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    width: 446px
+  .map__title
+    font-size: 30px
+    padding-top: 50px
+    line-height: 35px
+    margin-top: 20px
+    margin-bottom: 20px
+  .map__wrapper
+    max-width: 400px
+
+@media (max-width: 800px)
+  .news__items
+    grid-template-columns: 1fr 1fr
+    // img
+    //   height: 13px
+    //   width: 13px
+  .about__container
+    justify-content: center
+
+@media (max-width: 675px)
+  .hero__btns
+    flex-wrap: wrap
+    justify-content: center
+    .hero__btn
+      &:last-child
+        margin-top: 20px
+@media (max-width: 620px)
+  .news__title-btn
+    width: 270px
+  .news__title
+    flex-direction: column
+    align-items: center
+  .map__wrapper
+    max-width: 300px
+  .map__title
+    margin-top: 0
+  .hero__title
+    display: flex
+    font-size: 50px !important
+  .map__btn span
+    font-size: 14px
+  .news__item-wrapper
+    margin-left: 0
+  .news__items
+    display: flex
+    flex-direction: column
+  .news__item-wrapper
+    max-width: 800px
+    align-items: none
+  .news__text
+    max-width: 800px
+  .news__img
+    width: 100%
+  .news__date
+    span
+      font-size: 20px
+  .news__inscription
+    font-size: 20px
+
+@media (max-width: 478px)
+  .hero__contacts
+    flex-direction: column
+  .hero__input-wrapper
+    width: 100%
+  .hero__form-wrapper
+    padding: 0
+    margin: 20px
+  .news__link
+    top: 80px
+
+@media (max-width: 378px)
+  .news__items
+    display: flex
+    flex-direction: column
+    align-items: center
+  .about__title
+    font-size: 16px
+  .map__wrapper
+    max-width: 250px
+  .map__text
+    font-size: 13px
+  .news__link
+    top: 80px

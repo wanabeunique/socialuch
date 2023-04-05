@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap')
+
+*
+  box-sizing: border-box
+
+.container-wrap
+  max-width: 1550px
+  padding: 0 10px
+  margin: 0 auto
+
+body
+
+  font-family: 'Jost', sans-serif // 300,400,500,600
+  // Общие цвета
+  --white-color: #F9F9F9
+  --green-color: #01A856
+  --gray-color: #696969
+  --black-color: #000
+  --red-color: rgba(228, 66, 51, 1)
+  --title-black-color: #242424
+  --text-black-color: #404040
+  --blue-color: #5DACDF
+  --turquoise-color: #F1FAFF
+
+  //Onsen vars reset
+  --toolbar-button-color: #A5A5A5 
+  --page-background-color: #fff
+  --toolbar-button-color: #A5A5A5 
+  --material-checkbox-checkmark-color: #5DACDF
+  --material-checkbox-active-color: #5DACDF
+
+  //Общие отступы
+
+  --tiny-offset: 20px
+  --small-offset: 30px
+  --middle-offset: 40px
+  --big-offset: 80px
+
+.btnAcc
+  display: flex
+  width: 250px
+  height: 50px
+  border: 1px solid var(--green-color)
+  border-radius: 40px
+  align-items: center
+  justify-content: center
+
+.btnAcc__text
+  margin-left: 10px
+  font-weight: 600
+  font-size: 18px
+  line-height: 26px
+  color: var(--green-color)
+
+.btnAcc--logined
+  background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+  p
+    color: white
+
+//page
+.page__link
+  color: var(--text-black-color)
+.page__current
+  color: var(--page-nav-color)
+  line-height: 140%
+
+// title
+.defaultTitle
+  margin: var(--small-offset) 0
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+.defautTitle--text
+  color: var(--title-black-color)
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+.defautTitle--btn
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 16px 45px
+  background: linear-gradient(101.67deg, #2BB06F 20%, #029643 83.57%)
+  border-radius: 40px
+  display: flex
+  height: 52px
+  width: 250px
+  min-width: 250px
+  p
+    font-weight: 500
+    font-size: 18px
+    line-height: 26px
+    color: white
+    margin-right: 12px
+
+body
+  input:checked ~ nav
+    z-index: 400
+
+.burger-lines
+  z-index: 2000
+
+.open
+  z-index: 500

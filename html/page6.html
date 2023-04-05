@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css "/>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js "></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>Document</title>
+  <script defer src="./../js/slider.js"></script>
+  <link rel="stylesheet" href="./../css/page6.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container-wrap  ">
+      <div class="header__logo">
+        <img src="./../img/header/logo.png" alt="">
+      </div>
+
+      <input id="burger" type="checkbox" class="burger" onclick="scrollDisable(event)"/>
+      <label for="burger" class="burger-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+      <nav class="header__nav">
+        <div class="header__social header__item">
+          <strong class="header__text">Телефон<span>+7 (831) 987-77-54</span></strong>
+        </div>
+        <div class="header__social header__item">
+          <strong class="header__text">E-mail<span>social@nn.ru</span></strong>
+        </div>
+        <a href="#" class="btnAcc header__item header__lk btnAcc--logined">
+          <img src="./../img/header/lk-active.svg" alt="">
+          <p class="btnAcc__text">Личный кабинет</p>
+          <span class="header__notification">
+            <img src="./../img/header/notificationsWhite.svg" alt="">
+          </span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="page__container container-wrap">
+        <a href="#" class="page__link">Главная&nbsp;</a><span class="page__current">/ Личный кабинет социального участкового</span>
+      </div>
+    </div>
+    <section class="passport">
+      <div class="passport__container container-wrap">
+        <div class="passport__item">
+          <div class="passport__text">
+            <h3 class="passport__title">
+              Паспорт района
+            </h3>
+            <span class="passport__subtitle">
+              Ленинский район Нижнего Новгорода
+            </span>
+          </div>
+          <div class="passport__btns">
+            <a href="#" class="passport__btn--blue passport__btn--open">
+              <img src="./../img/page6/pdf.svg" alt="">
+              Открыть паспорт района
+            </a>
+            <a href="#" class="passport__btn--blue">
+              Лидеры мнений
+            </a>
+          </div>
+        </div>
+        <div class="passport__item">
+          <div class="passport__text">
+            <h3 class="passport__title">
+              Жители района
+            </h3>
+            <span class="passport__subtitle">
+              Список зарегистрированных жителей
+            </span>
+          </div>
+          <div class="passport__btns">
+            <a href="#" class="passport__btn--blue">
+              Активисты
+            </a>
+            <a href="#" class="passport__btn--blue passport__btn--white">
+              <img src="./../img/page6/home.svg" alt="">
+              Открыть паспорт района
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="problems">
+      <div class="board container-wrap">
+        <h2 class="board__title">Проблемы на территории района</h2>
+        <ul class="board__items">
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item board__item--link">
+            <a href="#" class="board__btn board__btn--white">
+              <img src="./../img/page6/listBlue.svg" alt="">
+              <span>Перейти ко всему списку</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    <section class="events">
+      <div class="events__container container-wrap">
+        <stong class="events__title">Интерактивная карта Ленинского района</stong>
+        <span class="events__subtitle">Тип объекта:</span>
+        <div class="events__types">
+          <div class="events__choose">
+            <a href="#" class="events__choose--item events__choose--active">
+              События
+            </a>
+            <a href="#" class="events__choose--item">
+              Социальные объекты
+            </a>
+            <a href="#" class="events__choose--item">
+              Опросы и голосования
+            </a>
+            <a href="#" class="events__choose--item">
+              Новости
+            </a>
+            <a href="#" class="events__choose--item">
+              Объявления
+            </a>
+          </div>
+          <ul class="events__content">
+            <li class="events__content--item">      
+              <img class="events__content--img" src="./../img/page2/eventsIco/ico1.svg" alt="">
+              <p class="events__content--text">Субботник</p>
+            </li>
+            <li class="events__content--item">      
+              <img class="events__content--img" src="./../img/page2/eventsIco/ico2.svg" alt="">
+              <p class="events__content--text">Встреча с соц.участковым</p>
+            </li>
+            <li class="events__content--item">      
+              <img class="events__content--img" src="./../img/page2/eventsIco/ico3.svg" alt="">
+              <p class="events__content--text">Ремонт</p>
+            </li>
+            <li class="events__content--item">      
+              <img class="events__content--img" src="./../img/page2/eventsIco/ico4.svg" alt="">
+              <p class="events__content--text">Собрание активистов</p>
+            </li>        
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="googleMap">
+      <img src="./../img/page6/googlemap.jpg" alt="">
+    </section>
+    <section class="quiz">
+      <div class="container-wrap quiz__container">
+        <div class="defaultTitle">
+          <p class="defautTitle--text">Список опросов и голосований</p>
+        </div>
+        <div class="quiz--wrapper">
+          <div class="quiz__secondary--item">
+            <div class="quiz__info quiz__info--secondary">
+              <div class="quiz__type">
+                <h4 class="quiz__name">Опрос</h4>
+                <div class="quiz__hashtag"><span>#ЖКХ</span></div>
+              </div>
+              <div class="quiz__data">
+                <div class="quiz__data--profile">
+                  <img src="./../img/page2/profile.svg" alt="">
+                  <p>Максим Иванов</p>
+                </div>
+              </div>
+            </div>
+            <div class="quiz__text--secondary">
+              <div class="quiz__data--date">
+                <img src="./../img/page2/calendarGreen.svg" alt="">
+                <p>Дата создания: 23.01.2022</p>
+              </div>
+              <p class="quiz__question--second">
+                Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+              </p>
+              <a href="#" class="quiz__secondary--btn">
+                <p>Пройти &gt;</p>
+              </a>
+            </div>
+            
+        </div>
+        <div class="quiz__secondary--item">
+          <div class="quiz__info quiz__info--secondary">
+            <div class="quiz__type">
+              <h4 class="quiz__name">Опрос</h4>
+              <div class="quiz__hashtag"><span>#ЖКХ</span></div>
+            </div>
+            <div class="quiz__data">
+              <div class="quiz__data--profile">
+                <img src="./../img/page2/profile.svg" alt="">
+                <p>Максим Иванов</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__text--secondary">
+            <div class="quiz__data--date">
+              <img src="./../img/page2/calendarGreen.svg" alt="">
+              <p>Дата создания: 23.01.2022</p>
+            </div>
+            <p class="quiz__question--second">
+              Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+            </p>
+            <a href="#" class="quiz__secondary--btn">
+              <p>Пройти &gt;</p>
+            </a>
+          </div>
+        </div>
+        <div class="quiz__secondary--item">
+          <div class="quiz__info quiz__info--secondary">
+            <div class="quiz__type">
+              <h4 class="quiz__name">Опрос</h4>
+              <div class="quiz__hashtag"><span>#ЖКХ</span></div>
+            </div>
+            <div class="quiz__data">
+              <div class="quiz__data--profile">
+                <img src="./../img/page2/profile.svg" alt="">
+                <p>Максим Иванов</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__text--secondary">
+            <div class="quiz__data--date">
+              <img src="./../img/page2/calendarGreen.svg" alt="">
+              <p>Дата создания: 23.01.2022</p>
+            </div>
+            <p class="quiz__question--second">
+              Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+            </p>
+            <a href="#" class="quiz__secondary--btn">
+              <p>Пройти &gt;</p>
+            </a>
+          </div>
+        </div>
+        <div class="quiz__secondary--item">
+          <div class="quiz__info quiz__info--secondary">
+            <div class="quiz__type">
+              <h4 class="quiz__name">Опрос</h4>
+              <div class="quiz__hashtag"><span>#ЖКХ</span></div>
+            </div>
+            <div class="quiz__data">
+              <div class="quiz__data--profile">
+                <img src="./../img/page2/profile.svg" alt="">
+                <p>Максим Иванов</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__text--secondary">
+            <div class="quiz__data--date">
+              <img src="./../img/page2/calendarGreen.svg" alt="">
+              <p>Дата создания: 23.01.2022</p>
+            </div>
+            <p class="quiz__question--second">
+              Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+            </p>
+            <a href="#" class="quiz__secondary--btn">
+              <p>Пройти &gt;</p>
+            </a>
+          </div>
+        </div>
+        <div class="quiz__secondary--item">
+          <div class="quiz__info quiz__info--secondary">
+            <div class="quiz__type">
+              <h4 class="quiz__name">Опрос</h4>
+              <div class="quiz__hashtag"><span>#ЖКХ</span></div>
+            </div>
+            <div class="quiz__data">
+              <div class="quiz__data--profile">
+                <img src="./../img/page2/profile.svg" alt="">
+                <p>Максим Иванов</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__text--secondary">
+            <div class="quiz__data--date">
+              <img src="./../img/page2/calendarGreen.svg" alt="">
+              <p>Дата создания: 23.01.2022</p>
+            </div>
+            <p class="quiz__question--second">
+              Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+            </p>
+            <a href="#" class="quiz__secondary--btn">
+              <p>Пройти &gt;</p>
+            </a>
+          </div>
+        </div>
+        <div class="quiz__secondary--item">
+          <div class="quiz__item--link">
+            <a href="#" class="board__btn--white">
+              <img src="./../img/page6/listBlue.svg" alt="">
+              <span>Перейти ко всему списку</span>
+            </a>
+            <a href="#" class="board__btn--blue">
+              <img src="./../img/page6/listBlue.svg" alt="">
+              <span>+ Перейти ко всему списку</span>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="carousel">
+    <div class="container-wrap carousel__container">
+      <div class="defaultTitle">
+        <h3 class="defautTitle--text">Новостная лента Ленинского района</h3>
+        <div class="carousel__btns">
+          <a href="#" class="defautTitle--btn btn--white"><p>Посмотреть все &gt;</p></a>
+          <a href="#" class="defautTitle--btn btn--blue"><p>+ Добавить новость</p></a>
+        </div>
+        
+      </div>
+      <div class="swiper" id="album-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new1.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new2.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new3.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new4.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new5.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new6.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new7.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__item-wrapper">
+              <img class="carousel__img" src="./../img/page2/carousel/new8.jpg" alt="">
+            <div class="carousel__text">
+              <div class="carousel__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="carousel__link">
+                  <p>Подробнее</p>
+                  <img src="img/carousel/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      </div>
+  </section>
+  <section class="boards">
+    <div class="boards__wrapper container-wrap boards__wrapper--white">
+      <div class="board">
+        <h2 class="board__title">Обращение от жителей</h2>
+        <ul class="board__items">
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item board__item--link">
+            <a href="#" class="board__btn--white">
+              <img src="./../img/page6/listBlue.svg" alt="">
+              <span>Перейти ко всему списку</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  </section>
+  <section class="boards">
+    <div class="boards__wrapper container-wrap boards__wrapper--blue">
+      <div class="board">
+        <h2 class="board__title">События</h2>
+        <ul class="board__items">
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item">
+            <div class="board__item--date">
+              <img src="./../img/page2/calendar.svg" alt="">
+              <span>22.12.2022</span>
+            </div>
+            <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+            <a href="#" class="board__btn">
+              <span>Просмотреть ></span>
+            </a>
+          </li>
+          <li class="board__item board__item--link">
+            <a href="#" class="board__btn--white">
+              <img src="./../img/page6/listBlue.svg" alt="">
+              <span>Перейти ко всему списку</span>
+            </a>
+            <a href="#" class="board__btn--blue">
+              <img src="./../img/page6/listBlue.svg" alt="">
+              <span>+ Перейти ко всему списку</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container-wrap">
+      <ul class="footer__items">
+        <li class="footer__item"><img src="./../img/footer/logo.png" alt=""></li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/phone.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">Телефон тех поддержки</strong>
+            <span class="footer__number">+7 (831) 987-77-54</span>
+          </div>
+        </li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/message.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">E-mail тех поддержки</strong>
+            <span class="footer__mail">social@nn.ru</span>
+          </div>
+        </li>
+        <li class="footer__item footer__nav">
+          <ul>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Главная</a>          
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Новости</a>          
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item footer__btn">
+          <a href="#" class="btnAcc">
+            <img src="img/btnPic.svg" alt="">
+            <p class="btnAcc__text">Личный кабинет</p>         
+          </a>
+        </li>
+      </ul>
+      <div class="footer__privace-policy">
+        <p>&copy;&nbsp;2022&ndash;2022 Проект &laquo;Социальный участковый&raquo;</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+    </footer>
+</body>
+</html>

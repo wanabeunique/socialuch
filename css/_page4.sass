@@ -1,0 +1,396 @@
+.MultiFile-label
+  display: inline-flex
+  flex-direction: row-reverse
+  align-items: center
+  font-size: 14px
+  color: #8F9DA8
+
+  &:not(:last-child)
+    margin-right: 23px
+
+.submit-request-form input[type="file"]
+  height: 26px
+  margin-bottom: 15px
+  position: absolute
+  top: -3000px
+
+.MultiFile-title
+  margin-right: 7px
+
+.MultiFile-list
+  display: flex
+
+.MultiFile-remove
+  display: block
+  width: 9px
+  height: 9px
+  position: relative
+
+.MultiFile-remove:before,
+.MultiFile-remove:after
+  content: ''
+  width: 10px
+  height: 1px
+  position: absolute
+  top: 50%
+  left: 50%
+  background-color: #000000
+
+.MultiFile-remove:before
+  transform: translate(-50%, -50%) rotate(-45deg)
+
+.MultiFile-remove:after
+  transform: translate(-50%, -50%) rotate(45deg)
+
+.control-group.tal
+  text-align: left
+
+.upload_files_button
+  display: inline-flex
+  cursor: pointer
+  align-items: center
+  color: #861519
+  text-decoration: underline
+  text-decoration-color: #861519
+  text-underline-offset: 2px
+  margin-bottom: 10px
+
+  &:hover
+    text-decoration: none
+
+  &:before
+    content: ''
+    display: inline-block
+    width: 22px
+    height: 22px
+    margin-right: 13px
+
+// editing
+
+.editing__item
+  display: flex
+  flex-direction: column
+  margin-bottom: 25px
+  p
+    color: var(--title-black-color)
+    margin-bottom: 8px
+
+.editing__street--input
+  height: 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  font-weight: 300
+  color: var(--title-black-color)
+  padding: 0 var(--tiny-offset)
+
+// /// // /
+.editing__select
+  position: relative
+  max-width: 100%
+  height: 40px
+  &::after
+    content: ''
+    display: flex
+    position: absolute
+    background-image: url("./../img/page4/blueArrow.svg")
+    background-repeat: no-repeat
+    width: 14px
+    height: 20px
+    right: 0
+    top: 14px
+    z-index: 5
+    padding: 0 10px
+
+.editing__input--category
+  max-width: 100%
+
+.chosen-value
+  transition: .3s ease-in-out
+  display: flex
+  justify-content: center
+  flex-direction: column
+  position: relative
+  padding: 10px 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  height: 40px
+
+.chosen-value
+  color: var(--title-black-color)
+  font-weight: 300
+  &:hover
+    background-color: var(--white-color)
+    cursor: pointer
+  &::-webkit-input-placeholder
+    color: #333
+
+  &:focus,
+  &.open
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2)
+    outline: 0
+    background-color: var(--white-color)
+    color: #000
+
+  &::-webkit-input-placeholder
+    color: #000
+
+.editing__input--adress
+  width: 400px
+
+  &::-webkit-input-placeholder
+    color: #333
+
+  &:hover
+    background-color: var(--white-color)
+    cursor: pointer
+
+    &::-webkit-input-placeholder
+      color: #333
+
+  &:focus,
+  &.open
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2)
+    outline: 0
+    background-color: var(--white-color)
+    color: #000
+
+    &::-webkit-input-placeholder
+      color: #000
+
+.value-list
+  list-style: none
+  margin-top: 10px
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2)
+  overflow: hidden
+  max-height: 0
+  max-width: 400px
+  transition: .3s ease-in-out
+  position: relative
+  z-index: 10000
+  li
+    z-index: 1000
+
+  &.open
+    max-height: 320px
+    overflow: auto
+
+  li
+    position: relative
+    background-color: var(--white-color)
+    padding: 1rem
+    font-size: 16px
+    display: flex
+    align-items: center
+    cursor: pointer
+    transition: background-color .3s
+    opacity: 1
+
+    &:hover
+      background-color: var(--white-color)
+
+    &.closed
+      max-height: 0
+      overflow: hidden
+      padding: 0
+      opacity: 0
+
+.editing__textarea
+  min-height: 115px
+  border: 1px solid #EDEDED
+  border-radius: 20px
+  padding: 10px 20px
+  min-width: 100%
+  resize: none
+  color: #A5A5A5
+  font-weight: 300
+  font-size: 14px
+  line-height: 140%
+
+.editing__status
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: var(--tiny-offset)
+
+.editing__status
+  .editing__select
+    width: 100%
+    input
+      width: 100%
+
+.editing__date
+  height: 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  font-weight: 300
+  color: var(--title-black-color)
+  padding: 0 var(--tiny-offset)
+  &:hover
+    background: var(--white-color)
+    transition: .3s ease all
+
+.editing__date--wrapper
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 20px
+
+.editing__news--title
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 20px
+input[type="date"]::-webkit-calendar-picker-indicator
+  background-image: url(./../img/calendar.svg)
+  width: 19px
+  height: 19px
+
+.editing__news
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 20px
+  .editing__select
+    width: 100%
+    input
+      width: 100%
+
+.editing__upload--wrapper
+  width: 400px
+  height: 40px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  display: flex
+  max-width: 400px
+  max-height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  position: relative
+  &:hover
+    background: var(--white-color)
+    transition: .3s ease all
+.editing__upload
+  display: none
+  &::before
+    position: absolute
+
+.editing__upload--text
+  display: flex
+  align-items: center
+  justify-content: center
+  color: var(--blue-color)
+  position: absolute
+  top: calc( 20px - 23px/2 )
+  img
+    margin-right: 7px
+
+#editing__upload_list
+  margin-top: 20px
+  margin-bottom: 20px
+  position: absolute
+  display: flex
+  gap: 20px
+  width: 100%
+  align-items: center
+  justify-content: left
+  flex-wrap: wrap
+  width: 1530px
+  top: 40px
+  left: 0
+
+.editing__files
+  display: flex
+  margin-top: 8px
+  flex-wrap: wrap
+
+.editing__files > div
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 220px
+  width: 100%
+  min-height: 40px
+  background: #F9F9F9
+  border-radius: 40px
+  padding: 10px 20px
+  margin-bottom: 20px
+
+.MultiFile-title
+  color: var(--title-black-color)
+  font-weight: 300
+
+.editing__btns
+  display: flex
+  margin-top: var(--tiny-offset)
+  .editing__btn
+    &:first-child
+      margin-right: var(--tiny-offset)
+
+.editing__btn--blue
+  background: var(--blue-color)
+  color: white
+
+.editing__btn--white
+  background: #FFFFFF
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+  border-radius: 40px
+  color: var(--blue-color)
+
+.editing__btn
+  display: flex
+  justify-content: center
+  position: relative
+  align-items: center
+  height: 50px
+  width: 100%
+  border-radius: 40px
+  max-width: 300px
+  img
+    margin-right: 7px
+
+.chosen-value--first
+  max-width: 100%
+  width: calc(33.3% - 40px/3)
+
+// адаптив
+
+@media (max-width: 800px)
+  .footer__items
+    align-items: center
+  .editing__status
+    grid-template-columns: 1fr 1fr
+  .editing__news
+    grid-template-columns: 1fr 1fr
+  .editing__date--wrapper
+    grid-template-columns: 1fr 1fr
+  .chosen-value--first
+    width: calc( 50% - 10px )
+  .editing__upload--wrapper
+    width: calc( 50% - 10px )
+
+@media (max-width: 534px)
+  .footer__items
+    align-items: center
+  .editing__status
+    grid-template-columns: 1fr
+  .editing__news
+    grid-template-columns: 1fr
+  .editing__date--wrapper
+    grid-template-columns: 1fr
+  .chosen-value--first
+    width: 100%
+  .editing__upload--wrapper
+    width: 100%
+    max-width: 100%
+  .editing__files > .MultiFile-label
+    width: 100%
+    max-width: 100%
+    margin-right: 0
+
+@media (max-width: 400px)
+  .editing__btns
+    .editing__btn
+      &:first-child
+        margin-right: 10px

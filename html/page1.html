@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <script src="js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container-wrap  ">
+      <div class="header__logo">
+        <img src="./../img/header/logo.png" alt="">
+      </div>
+
+      <input id="burger" type="checkbox" class="burger" onclick=""/>
+      <label for="burger" class="burger-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+      <nav class="header__nav">
+        <div class="header__social header__item">
+          <strong class="header__text">Телефон<span>+7 (831) 987-77-54</span></strong>
+        </div>
+        <div class="header__social header__item">
+          <strong class="header__text">E-mail<span>social@nn.ru</span></strong>
+        </div>
+        <a href="#" class="btnAcc header__item">
+          <img src="./../img/header/btnPic.svg" alt="">
+          <p class="btnAcc__text">Личный кабинет</p>         
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container container-wrap">
+        <div class="hero__intro">
+          <span>Проект</span>
+          <h1 class="hero__title">Социальный участковый</h1>
+          <p class="hero__text">Приняв участие в&nbsp;проекте жители смогут участвовать в&nbsp;решениях проблем
+            на&nbsp;проживаемой территории и&nbsp;обратиться за&nbsp;помощью к&nbsp;социальному участковому.</p>
+          <div class="hero__btns">
+            <a href="#" class="hero__btn hero__btn-left">
+              <p class="hero__btn-text">Хочу стать социальным участковым</p>
+              <img src="./../img/page1/arrow.svg" alt="">
+            </a>
+            <a href="#" class="hero__btn hero__btn-right">
+              <img src="./../img/page1/btnPic.svg" alt="">
+              <p class="hero__btn-text">Войти в личный кабинет</p>
+            </a>
+          </div>
+        </div>
+        <div class="hero__form">
+          <form class="hero__form-wrapper" action="">
+            <h2>Регистрация в программе</h2>
+            <div class="hero__input-wrapper">
+              <img src="./../img/page1/hero/inputPic/profile.svg" alt="">
+              <input type="text" class="hero__input" placeholder="ФИО">
+            </div>
+            <div class="hero__contacts">
+              <div class="hero__input-wrapper"> <img src="./../img/page1/hero/inputPic/phone.svg" alt=""><input type="text" class="hero__input" placeholder="Телефон"></div>
+              <div class="hero__input-wrapper"> <img src="./../img/page1/hero/inputPic/message.svg"" alt=""><input type="mail" class="hero__input" placeholder="E-mail"></div>
+            </div>
+            <div class="hero__input-wrapper"> <img src="./../img/page1/hero/inputPic/place.svg"" alt=""><input type="text" class="hero__input" placeholder="Район проживания"></div>
+            <button class="hero__form-btn"><span>Зарегистрироваться</span></button>
+            <div class="hero__agreement">
+              <input type="checkbox" class="hero__checkbox" checked>
+              <div class="hero__agreement-text">
+                Нажимая на кнопку Вы соглашаетесь с условиями
+                <br>
+                <a href="#">Политики конфиденциальности</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__container container-wrap">
+        <div class="about__item">
+          <p  class="about__title">Социальное сопровождение
+            и&nbsp;социальная безопасность</p>
+          <img class="about__img" src="./../img/page1/about/about1.svg" alt="">
+        </div>
+        <div class="about__item">
+          <p class="about__title">Помощь в&nbsp;решении актуальных
+            жилищных проблем в&nbsp;каждом районе</p>
+          <img class="about__img" src="./../img/page1/about/about2.svg" alt="">
+        </div>
+        <div class="about__item">
+          <p class="about__title">Формирование профессиональной
+            среды в&nbsp;предоставлении
+            социальных услуг</p>
+          <img class="about__img" src="./../img/page1/about/about3.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__container container-wrap">
+        <div class="news__title">
+          <h3>Новости проекта</h3>
+          <a href="#" class="news__title-btn">
+            <p>Читать все новости</p>
+            <img src="./../img/page1/news/arrowWhite.svg" alt="">
+          </a>
+        </div>
+        <ul class="news__items">
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new1.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new2.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new3.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new4.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new5.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new6.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new7.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__item-wrapper">
+              <img class="news__img" src="./../img/page1/news/new8.jpg" alt="">
+            <div class="news__text">
+              <div class="news__date">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                  <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                </svg>
+                <a href="#" class="news__link">
+                  <p>Подробнее</p>
+                  <img src="./../img/page1/news/arrowRed.svg" alt="">
+                </a>
+                <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+              </div>
+              <p class="news__inscription">Нижегородскую &laquo;Хрустальную
+              снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+            </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__container container-wrap">
+        <div class="map__wrapper">
+            <div class="map__title">Интерактивная карта моего района</div>
+          <div class="map__text">Приняв участие в&nbsp;проекте жители смогут участвовать в&nbsp;решениях проблем
+            на&nbsp;проживаемой территории, обратиться за&nbsp;помощью к&nbsp;социальному участковому,
+            получить бонусы и&nbsp;пройти опросы</div>
+        <a href="#" class="map__btn">
+            <span>Перейти к карте</span>
+            <img src="./../img/page1/arrow.svg" alt="">
+        </a>
+        </div>
+        
+      </div>
+    </section> 
+  </main>
+  <footer class="footer">
+    <div class="footer__container container-wrap">
+      <ul class="footer__items">
+        <li class="footer__item"><img src="./../img/footer/logo.png" alt=""></li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/phone.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">Телефон тех поддержки</strong>
+            <span class="footer__number">+7 (831) 987-77-54</span>
+          </div>
+        </li>
+        <li class="footer__item footer__contacts">
+          <img src="./../img/footer/message.svg" alt="">
+          <div class="footer__contacts-text">
+            <strong class="footer__contacts-title">E-mail тех поддержки</strong>
+            <span class="footer__mail">social@nn.ru</span>
+          </div>
+        </li>
+        <li class="footer__item footer__nav">
+          <ul>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Главная</a>          
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Новости</a>          
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item footer__btn">
+          <a href="#" class="btnAcc">
+            <img src="img/btnPic.svg" alt="">
+            <p class="btnAcc__text">Личный кабинет</p>         
+          </a>
+        </li>
+      </ul>
+      <div class="footer__privace-policy">
+        <p>&copy;&nbsp;2022&ndash;2022 Проект &laquo;Социальный участковый&raquo;</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
